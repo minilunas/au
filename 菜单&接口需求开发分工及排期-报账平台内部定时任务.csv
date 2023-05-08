@@ -1,0 +1,265 @@
+﻿序号,模块,定时任务名称,定时任务执行地址,参数,,,,,"定时频率
+(cron表达式)",备注,是否已配置（此两列由定时配置人填写）,,负责人
+,,,,名称,参数类型,是否必填,是否启用,描述,,,dev,uat,
+1（示例）,integration,资金回单挂接,/claim/task/fundReceiptHookTask,startDateStr,字符,否,否,开始文件夹 yyyyMMdd，无时设置为空,0 26 3 * * ?,,是,,余唯婷
+,,,,endDateStr,字符,否,否,结束文件夹 yyyyMMdd，无时设置为空,,,,,
+2,claim,"根据承兑汇票台账应付票据,自动生成内部资金调拨单",/claim/task/abmAutoReconciliation,,,,,,0 0 6 * * ?,,,,杜洋
+3,claim,"根据承兑汇票台账应付票据,自动生成内部资金调拨单,自动签认",/claim/task/abmAutoSignFor,,,,,,0 0/10 * * * ?,,,,杜洋
+4,claim,T015T016收款自动签认,/claim/task/autoSign4T015T016,,,,,,"0 10 3,12 * * ?",,,,杜洋
+5,claim,更改付款列表为已确认,/claim/task/confirmPayList,,,,,,0 50 4 * * ?,,,,杜洋
+6,claim,根据承兑汇票，生成T014报账单,/claim/task/createT014Claim,,,,,,0 0/10 * * * ?,,,,杜洋
+7,claim,资金上划下拨-数据签认,/claim/task/fundAllocationSign,param,字符,否,是,收款池表id，无时设置为空,"0 0 4,13,18 * * ?",,,,杜洋
+8,claim,定时导入付款凭证（打卡表）-内网银行托收,/claim/task/importLedgerCert4BankReceived,param,字符,否,是,计划付款行id集，以逗号隔开，无时设置为空,0 0/30 * * * ?,,,,杜洋
+9,claim,付款失败T007数据更新标识,/claim/task/payFailUpdateVendor,param,字符,否,是,计划付款行id，无时设置为空,0 0/5 * * * ?,,,,杜洋
+10,claim,所有可支付数据状态自动更新成“放弃支付”,/claim/task/paylistUpdate,param,字符,否,是,计划付款行id，无时设置为空,0 18 23 L * ?,,,,杜洋
+11,claim,付款失败挂账发送邮件,/claim/task/paymentFailSendMail,param,字符,否,是,报账单id，无时设置为空,0 0/5 * * * ?,,,,杜洋
+12,claim,资金自动发起确认,/claim/task/startConfirmPayList,,,,,,0 0/20 8-19 * * ?,,,,杜洋
+13,claim,承兑汇票工作台T044和T051自动发送,/claim/task/t044AndT051AutoSendProcess,param,字符,否,是,报账单id，无时设置为空,0 0/5 * * * ?,,,,杜洋
+14,claim,外币报账单生成内往凭证,/claim/task/t057PaylistConfirm,,,,,,0 0/5 * * * ?,,,,杜洋
+15,claim,更新承兑汇票客户信息,/claim/task/tMisPaymentCustomers,,,,,,0 10 23 * * ?,,,,杜洋
+16,claim,并付款定时导入,/claim/task/importApCertMerge,,,,,,0 0/2 * * * ?,,,,杜洋
+17,claim,虚拟付款定时导入,/claim/task/importApCert,,,,,,0 0/2 * * * ?,,,,杜洋
+18,claim,应付延迟导入,/claim/task/importApDelay,param,字符,否,是,报账单id集，以逗号隔开，无时设置为空,0 0/2 * * * ?,,,,杜洋
+19,claim,付款凭证导入（打卡表）,/claim/task/importLedgerCert,param,字符,否,是,计划付款行id集，以逗号隔开，无时设置为空,0 0/30 * * * ?,,,,杜洋
+20,claim,资金上划下拨-总账收付款凭证导入,/claim/task/importLedgerTRPayment,param,字符,否,是,报账单编号，无时设置为空,0 0/2 * * * ?,,,,杜洋
+21,claim,付款凭证导入（付款计划）,/claim/task/importTRCert,param,字符,否,是,计划付款行id集，以逗号隔开，无时设置为空,0 0/5 * * * ?,,,,杜洋
+22,claim,验证应付发票取消状态,/claim/task/validateApInvoiceCancel,,,,,,35 0/2 * * * ?,,,,杜洋
+23,claim,验证草稿发票,/claim/task/validateApInvoiceERP,,,,,,0 0/3 * * * ?,,,,杜洋
+24,claim,验证应付发票,/claim/task/validateApInvoice,,,,,,0 0/2 * * * ?,,,,杜洋
+25,claim,验证应付付款凭证,/claim/task/validateCertificateInfo,,,,,,0 0/2 * * * ?,,,,杜洋
+26,claim,查询承兑汇票到期日期为下一工作日的票据,/claim/task/getAbmNeedAlert,,,,,,0 0 6 * * ?,,,,杜洋
+27,claim,承兑汇票到期发送邮件,/claim/task/cdhpSendEmail,,,,,,0 0 8 * * ?,,,,杜洋
+28,fund,收款数据比对,/fund/task/compareFlowData,startTime,字符,否,是,开始时间 yyyy-MM-dd，无时设置为空,0 0 3 * * ?,,,,杜洋
+,,,,endTime,字符,否,是,结束时间 yyyy-MM-dd，无时设置为空,,,,,杜洋
+29,fund,查询指令状态（查询转账结果）,/fund/task/fundOrderStatus,,,,,,0 2 0/6 * * ?,,,,杜洋
+30,fund,付款清单状态发送导入(自动发送到待导入),/fund/task/sendImportTR,param,字符,否,是,计划付款行id集，以逗号隔开，无时设置为空,0 0/5 * * * ?,,,,杜洋
+31,fund,发送资金（打卡表）,/fund/task/sendLedger,param,字符,否,是,计划付款行id集，以逗号隔开，无时设置为空,0 0/30 * * * ?,,,,杜洋
+32,fund,发送资金（付款计划）,/fund/task/sendPaymentList,param,字符,否,是,计划付款行id集，以逗号隔开，无时设置为空,0 0/30 * * * ?,,,,杜洋
+33,fund,收款数据同步,/fund/task/syncAccountTransFlow,startTime,字符,否,是,开始时间 yyyy-MM-dd，无时设置为空,0 0 1 * * ?,,,,杜洋
+34,,,,endTime,字符,否,是,结束时间 yyyy-MM-dd，无时设置为空,,,,,杜洋
+35,fund,收款数据更新到期标识,/fund/task/updateFlowExpire,,,,,,0 0/2 * * * ?,,,,杜洋
+36,integration,FSSC_0072-收款注销备注同步接口,/integration/fssc0072/execute,updateDateStr,String,否,是,,0 0/30 * * * ?,,,,徐朝
+,,,,pNlsLang,String,否,是,,,,,,徐朝
+37,integration,FSSC_0037-资产类别同步接口,/integration/fssc0037/execute,pCategoryId,String,否,是,,0 0/30 * * * ?,,,,徐朝
+,,,,pBookTypeCode,String,否,是,,,,,,徐朝
+,,,,pCatSeg1,String,否,是,,,,,,徐朝
+,,,,pCatSeg2,String,否,是,,,,,,徐朝
+,,,,updateDateStr,String,否,是,,,,,,徐朝
+,,,,pWhere,String,否,是,,,,,,徐朝
+38,integration,FSSC_0034-资产成本信息同步接口,/integration/fssc0034/execute,pAssetId,String,否,是,,0 0/30 * * * ?,,,,徐朝
+,,,,pBookTypeCode,String,否,是,,,,,,徐朝
+,,,,updateDateStr,String,否,是,,,,,,徐朝
+,,,,pWhere,String,否,是,,,,,,徐朝
+,,,,pStartLastUpdate,String,否,是,,,,,,徐朝
+,,,,pEndLastUpdate,String,否,是,,,,,,徐朝
+39,integration,FSSC_0036-资产折旧信息同步接口,/integration/fssc0036/execute,pAssetId,String,否,是,,0 0/30 * * * ?,,,,徐朝
+,,,,pBookTypeCode,String,否,是,,,,,,徐朝
+,,,,updateDateStr,String,否,是,,,,,,徐朝
+,,,,pWhere,String,否,是,,,,,,徐朝
+,,,,pStartLastUpdate,String,否,是,,,,,,徐朝
+,,,,pEndLastUpdate,String,否,是,,,,,,徐朝
+40,integration,FSSC_0035-资产分配信息同步接口,/integration/fssc0035/execute,pAssetId,String,否,是,,0 0/30 * * * ?,,,,徐朝
+,,,,pBookTypeCode,String,否,是,,,,,,徐朝
+,,,,updateDateStr,String,否,是,,,,,,徐朝
+,,,,pWhere,String,否,是,,,,,,徐朝
+,,,,pStartLastUpdate,String,否,是,,,,,,徐朝
+,,,,pEndLastUpdate,String,否,是,,,,,,徐朝
+41,integration,FSSC_0033-资产基本信息同步接口,/integration/fssc0033/execute,pAssetId,String,否,是,,0 0/30 * * * ?,,,,徐朝
+,,,,pAssetNumber,String,否,是,,,,,,徐朝
+,,,,updateDateStr,String,否,是,,,,,,徐朝
+,,,,pWhere,String,否,是,,,,,,徐朝
+,,,,pStartLastUpdate,String,否,是,,,,,,徐朝
+,,,,pEndLastUpdate,String,否,是,,,,,,徐朝
+42,integration,FSSC_0003-应付银行账户同步接口,/integration/fssc0003/execute,updateDateStr,String,否,是,,0 0 6 * * ?,,,,徐朝
+,,,,pOrganizationId,String,否,是,,,,,,徐朝
+,,,,pBankAccountId,String,否,是,,,,,,徐朝
+,,,,pBankAccountNum,String,否,是,,,,,,徐朝
+,,,,allData,String,否,是,,,,,,徐朝
+43,integration,FSSC_0055-现金流标识同步接口,/integration/fssc0055/execute,pFlexCode,String,否,是,,0 10 22 * * ?,,,,徐朝
+,,,,pFlexName,String,否,是,,,,,,徐朝
+,,,,pWhere,String,否,是,,,,,,徐朝
+44,integration,FSSC_0056-汇率同步接口,/integration/fssc0056/execute,pStartConversionDate,String,否,是,,* * 3 * * ?,,,,徐朝
+,,,,pEndConversionDate,String,否,是,,,,,,徐朝
+,,,,pCorporate,String,否,是,,,,,,徐朝
+,,,,pWhere,String,否,是,,,,,,徐朝
+45,integration,FSSC_0068-业务实体（OU）同步接口,/integration/fssc0068/execute,ifWhereFlag,String,否,是,,0 22 2 * * ?,,,,徐朝
+,,,,where,String,否,是,,,,,,徐朝
+46,integration,FSSC_0062-总账凭证头信息接口,/integration/fssc0062/execute,pWhere,String,否,是,,0 05 03 * * ?,,,,徐朝
+47,integration,FSSC_0054-总帐科目组合同步接口,/integration/fssc0054/execute,updateDateStr,String,否,是,,0 0 0/1 * * ?,,,,徐朝
+,,,,pCodeCombinationId,String,否,是,,,,,,徐朝
+,,,,pAccountType,String,否,是,,,,,,徐朝
+,,,,pShowAccountType,String,否,是,,,,,,徐朝
+,,,,pCodeCombination,String,否,是,,,,,,徐朝
+48,integration,FSSC_0049-科目段同步接口,/integration/fssc0049/execute,updateDateStr,String,否,是,,0 20 0/2 * * ?,,,,徐朝
+,,,,pDescription,String,否,是,,,,,,徐朝
+,,,,pResponsibilityId,String,否,是,,,,,,徐朝
+,,,,pWhere,String,否,是,,,,,,徐朝
+,,,,pStartLastUpdate,String,否,是,,,,,,徐朝
+,,,,pEndLastUpdate,String,否,是,,,,,,徐朝
+49,integration,FSSC_0046-公司段同步接口,/integration/fssc0046/execute,updateDateStr,String,否,是,,0 35 1 * * ?,,,,徐朝
+,,,,pDescription,String,否,是,,,,,,徐朝
+,,,,pResponsibilityId,String,否,是,,,,,,徐朝
+,,,,pWhere,String,否,是,,,,,,徐朝
+,,,,pStartLastUpdate,String,否,是,,,,,,徐朝
+,,,,pEndLastUpdate,String,否,是,,,,,,徐朝
+50,integration,FSSC_0048-部门段同步接口,/integration/fssc0048/execute,updateDateStr,String,否,是,,0 15 0/2 * * ?,,,,徐朝
+,,,,pDescription,String,否,是,,,,,,徐朝
+,,,,pResponsibilityId,String,否,是,,,,,,徐朝
+,,,,pWhere,String,否,是,,,,,,徐朝
+,,,,pStartLastUpdate,String,否,是,,,,,,徐朝
+,,,,pEndLastUpdate,String,否,是,,,,,,徐朝
+51,integration,FSSC_0052-公司间段同步接口,/integration/fssc0052/execute,updateDateStr,String,否,是,,0 10 0/4 * * ?,,,,徐朝
+,,,,pDescription,String,否,是,,,,,,徐朝
+,,,,pResponsibilityId,String,否,是,,,,,,徐朝
+,,,,pWhere,String,否,是,,,,,,徐朝
+,,,,pStartLastUpdate,String,否,是,,,,,,徐朝
+,,,,pEndLastUpdate,String,否,是,,,,,,徐朝
+52,integration,FSSC_0053-备用段同步接口,/integration/fssc0053/execute,updateDateStr,String,否,是,,0 40 1 * * ?,,,,徐朝
+,,,,pDescription,String,否,是,,,,,,徐朝
+,,,,pResponsibilityId,String,否,是,,,,,,徐朝
+,,,,pWhere,String,否,是,,,,,,徐朝
+,,,,pStartLastUpdate,String,否,是,,,,,,徐朝
+,,,,pEndLastUpdate,String,否,是,,,,,,徐朝
+53,integration,FSSC_0051-产品段同步接口,/integration/fssc0051/execute,updateDateStr,String,否,是,,0 0 0/4 * * ?,,,,徐朝
+,,,,pDescription,String,否,是,,,,,,徐朝
+,,,,pResponsibilityId,String,否,是,,,,,,徐朝
+,,,,pWhere,String,否,是,,,,,,徐朝
+,,,,pStartLastUpdate,String,否,是,,,,,,徐朝
+,,,,pEndLastUpdate,String,否,是,,,,,,徐朝
+54,integration,FSSC_0050-项目段同步接口,/integration/fssc0050/execute,updateDateStr,String,否,是,,0 25 0/2 * * ?,,,,徐朝
+,,,,pDescription,String,否,是,,,,,,徐朝
+,,,,pResponsibilityId,String,否,是,,,,,,徐朝
+,,,,pWhere,String,否,是,,,,,,徐朝
+,,,,pStartLastUpdate,String,否,是,,,,,,徐朝
+,,,,pEndLastUpdate,String,否,是,,,,,,徐朝
+55,integration,FSSC_0073-总帐账套同步接口,/integration/fssc0073/execute,pResponsibilityName,String,否,是,,0 59 19 10 * ?,,,,徐朝
+,,,,pUserProfileOptionName,String,否,是,,,,,,徐朝
+,,,,pResponsibilityId,String,否,是,,,,,,徐朝
+,,,,pWhere,String,否,是,,,,,,徐朝
+56,integration,FSSC_0074-总帐期间同步接口,/integration/fssc0074/execute,pSetOfBooksId,String,否,是,,0 59 19 10 * ?,,,,徐朝
+,,,,pPeriodName,String,否,是,,,,,,徐朝
+,,,,pClosingStatus,String,否,是,,,,,,徐朝
+,,,,pWhere,String,否,是,,,,,,徐朝
+57,integration,FSSC_0020-应收来源同步接口,/integration/fssc0020/execute,updateDateStr,String,否,是,,0 0/20 * * * ?,,,,徐朝
+,,,,pOrgId,String,否,是,,,,,,徐朝
+,,,,pCoaCom,String,否,是,,,,,,徐朝
+,,,,pNlsLang,String,否,是,,,,,,徐朝
+58,integration,FSSC_0016-客户信息同步接口,/integration/fssc0016/execute,pOrgId,String,否,是,,0 0 0/1 * * ?,,,,徐朝
+,,,,pOrgName,String,否,是,,,,,,徐朝
+,,,,pCustomerId,String,否,是,,,,,,徐朝
+,,,,pCustomerNumber,String,否,是,,,,,,徐朝
+,,,,pCustomerName,String,否,是,,,,,,徐朝
+,,,,pCustomerSiteId,String,否,是,,,,,,徐朝
+,,,,pCustomerSiteCode,String,否,是,,,,,,徐朝
+,,,,pSiteUseCode,String,否,是,,,,,,徐朝
+,,,,pAddress1,String,否,是,,,,,,徐朝
+,,,,pAddress2,String,否,是,,,,,,徐朝
+,,,,pAddress3,String,否,是,,,,,,徐朝
+,,,,pAddress4,String,否,是,,,,,,徐朝
+,,,,pStartLastUpdateDate,String,否,是,,,,,,徐朝
+,,,,pEndLastUpdateDate,String,否,是,,,,,,徐朝
+,,,,pMeaningasaccSubType,String,否,是,,,,,,徐朝
+,,,,pStatus,String,否,是,,,,,,徐朝
+,,,,pCreatedDate,String,否,是,,,,,,徐朝
+59,integration,FSSC_0019-应收款活动同步接口,/integration/fssc0019/execute,updateDateStr,String,否,是,,0 0/20 * * * ?,,,,徐朝
+,,,,pOrgId,String,否,是,,,,,,徐朝
+,,,,pCoaCom,String,否,是,,,,,,徐朝
+,,,,pNlsLang,String,否,是,,,,,,徐朝
+60,integration,FSSC_0017-AR收款方法同步接口,/integration/fssc0017/execute,pOrgId,String,否,是,,0 0/50 * * * ?,,,,徐朝
+,,,,pCoaCom,String,否,是,,,,,,徐朝
+,,,,updateDateStr,String,否,是,,,,,,徐朝
+,,,,pNlsLang,String,否,是,,,,,,徐朝
+61,integration,FSSC_0063-总账凭证行信息接口,/integration/fssc0063/execute,pOrgId,String,否,是,,0 15 03 * * ?,,,,徐朝
+,,,,pPeriodName,String,否,是,,,,,,徐朝
+,,,,pJeHeaderId,String,否,是,,,,,,徐朝
+,,,,pDocValue,String,否,是,,,,,,徐朝
+,,,,pParameter1,String,否,是,,,,,,徐朝
+,,,,pParameter2,String,否,是,,,,,,徐朝
+,,,,pParameter3,String,否,是,,,,,,徐朝
+,,,,pStartLastUpdateDate,String,否,是,,,,,,徐朝
+,,,,pEndLastUpdateDate,String,否,是,,,,,,徐朝
+62,integration,FSSC_0064-计量单位同步接口,/integration/fssc0064/execute,updateDateStr,String,否,是,,0 0/20 * * * ?,,,,徐朝
+,,,,pNlsLang,String,否,是,,,,,,徐朝
+63,integration,FSSC_0018-事务处理类型同步接口,/integration/fssc0064/execute,updateDateStr,String,否,是,,0 0/20 * * * ?,,,,徐朝
+,,,,pOrgId,String,否,是,,,,,,徐朝
+64,integration,FSSC_0038_1-资产地点1同步接口,/integration/fssc00381/execute,pDescription,String,否,是,,0 01 02 * * ?,,,,徐朝
+,,,,pResponsibilityId,String,否,是,,,,,,徐朝
+,,,,updateDateStr,String,否,是,,,,,,徐朝
+,,,,pWhere,String,否,是,,,,,,徐朝
+,,,,pStartLastUpdate,String,否,是,,,,,,徐朝
+,,,,pEndLastUpdate,String,否,是,,,,,,徐朝
+65,integration,FSSC_0038_2-资产地点2同步接口,/integration/fssc00382/execute,pDescription,String,否,是,,0 10 02 * * ?,,,,徐朝
+,,,,pResponsibilityId,String,否,是,,,,,,徐朝
+,,,,updateDateStr,String,否,是,,,,,,徐朝
+,,,,pWhere,String,否,是,,,,,,徐朝
+,,,,pStartLastUpdate,String,否,是,,,,,,徐朝
+,,,,pEndLastUpdate,String,否,是,,,,,,徐朝
+66,integration,FSSC_0057-总账科目余额同步接口,/integration/fssc0057/execute,pSetOfBooksId,String,否,是,,0 20 * * * ?,,,,徐朝
+,,,,pCurrencyCode,String,否,是,,,,,,徐朝
+,,,,pPeriodName,String,否,是,,,,,,徐朝
+,,,,pSegment1,String,否,是,,,,,,徐朝
+,,,,pSegment2,String,否,是,,,,,,徐朝
+,,,,pSegment4,String,否,是,,,,,,徐朝
+,,,,pStartLastUpdateDate,String,否,是,,,,,,徐朝
+,,,,pEndLastUpdateDate,String,否,是,,,,,,徐朝
+,,,,pParameter1,String,否,是,,,,,,徐朝
+,,,,pParameter2,String,否,是,,,,,,徐朝
+,,,,pParameter3,String,否,是,,,,,,徐朝
+,,,,pWhere,String,否,是,,,,,,徐朝
+67,integration,FSSC_0066-用户职责配置信息同步接口,/integration/fssc0066/execute,updateDateStr,String,否,是,,0 0/30 * * * ?,,,,徐朝
+,,,,ifWhereFlag,String,否,是,,,,,,徐朝
+,,,,pStartLastUpdate,String,否,是,,,,,,徐朝
+,,,,pEndLastUpdate,String,否,是,,,,,,徐朝
+68,integration,FSSC_0001-员工供应商头信息同步接口,/integration/fssc0001/execute,updateDateStr,String,否,是,,0 0 0/1 * * ?,,,,徐朝
+,,,,where,String,否,是,,,,,,徐朝
+69,integration,FSSC_0002-员工供应商地点信息同步接口,/integration/fssc0002/execute,updateDateStr,String,否,是,,0 0 0/1 * * ?,,,,徐朝
+,,,,where,String,否,是,,,,,,徐朝
+70,integration,FSSC_0026-AR未核销收款同步接口,/integration/fssc0026/execute,pFromLastUpdatedDate,String,否,是,,0 0/20 * * * ?,,,,徐朝
+,,,,pToLastUpdatedDate,String,否,是,,,,,,徐朝
+,,,,pZeroBalance,String,否,是,,,,,,徐朝
+,,,,pPage,String,否,是,,,,,,徐朝
+,,,,pOrgId,String,否,是,,,,,,徐朝
+,,,,pReceiptMethodId,String,否,是,,,,,,徐朝
+,,,,pBankAcctUseId,String,否,是,,,,,,徐朝
+,,,,pCustomerId,String,否,是,,,,,,徐朝
+,,,,pCustSiteUseId,String,否,是,,,,,,徐朝
+71,integration,FSSC_0071-供应商银行信息同步接口,/integration/fssc0071/execute,pOrgId,String,否,是,,0 0 0/1 * * ?,,,,徐朝
+,,,,pEmployeeNumber,String,否,是,,,,,,徐朝
+,,,,updateDateStr,String,否,是,,,,,,徐朝
+,,,,pStartLastUpdate,String,否,是,,,,,,徐朝
+,,,,pEndLastUpdate,String,否,是,,,,,,徐朝
+72,claim,总账延迟导入,/claim/task/importGLDelay,param,字符,否,是,报账单id集，以逗号隔开，无时设置为空,0 0/2 * * * ?,,,,凌启
+73,claim,资产报废延迟导入,/claim/task/importGLOfScrapAssetDelayService,param,字符,否,是,报账单id集，以逗号隔开，无时设置为空,0 0/5 * * * ?,,,,凌启
+74,claim,资产其他减少延迟导入,/claim/task/importAssetOtherReduceDelayService,param,字符,否,是,报账单id集，以逗号隔开，无时设置为空,0 0/5 * * * ?,,,,凌启
+75,claim,对账单延迟导入,/claim/task/importApPoDelayService,param,字符,否,是,报账单id集，以逗号隔开，无时设置为空,0 0/2 * * * ?  ,,,,凌启
+76,claim,手工发票延迟导入,/claim/task/importRaCertificateGlAutoDelayService,param,字符,否,是,报账单id集，以逗号隔开，无时设置为空,0 0/5 * * * ?,,,,凌启
+77,claim,收款导入延迟导入,/claim/task/importArCertificateGlAutoDelayService,param,字符,否,是,报账单id集，以逗号隔开，无时设置为空,0 0/5 * * * ?,,,,凌启
+78,claim,转款导入延迟导入,/claim/task/importArAmtRemainGlAutoDelayService,param,字符,否,是,报账单id集，以逗号隔开，无时设置为空,0 0/5 * * * ?,,,,凌启
+79,claim,退款导入延迟导入,/claim/task/importReturnArAmtRemainGlAutoDelayService,param,字符,否,是,报账单id集，以逗号隔开，无时设置为空,0 0/5 * * * ?,,,,凌启
+80,integration,财司同步账户信息,/integration/api/feign/integration/fundclient/task/v1/syncAccountInfo,,,,,,0 20 5 * * ?,,是,,余唯婷
+81,claim,票易通识别定时,/claim/task/executeOcr,taskIds,字符,否,是,"重新查询的taskId,逗号分隔,允许为空",* 0/5 * * * ?,,是,,余唯婷
+82,claim,T058定时任务（老代码T058Job）,/claim/task/t058Enable,,,否,是,定时检查t058数据生效,,,,,
+83,pi,指标PerformanceReportByPassingRateMin,pi/schedule/updatePIDataMin,,,,,,,,,,封昊
+84,pi,指标PiAllClaim4Screen,pi/schedule/allClaim4Screen,,,,,,,,,,封昊
+85,pi,指标TPiRltIndex2,pi/schedule/getDataFor2,,,,,,,,,,封昊
+86,pi,指标TPiRltIndex3,pi/schedule/getDataFor3,,,,,,,,,,封昊
+87,pi,指标TPiRltIndex4,pi/schedule/getDataFor4,,,,,,,,,,封昊
+88,pi,指标TPiRltIndex46,pi/schedule/findTPiRltIndex46,,,,,,,,,,封昊
+89,pi,指标TPiRltIndex49,pi/schedule/findTPiRltIndex49,,,,,,,,,,封昊
+90,pi,指标TPiRltIndex72,pi/schedule/executeGetDataFor72,,,,,,,,,,封昊
+91,pi,指标TPiRltIndex73,pi/schedule/getDataFor73,,,,,,,,,,封昊
+92,pi,指标TPiRltIndex74,pi/schedule/getDataFor74,,,,,,,,,,封昊
+93,pi,指标TPiRltIndex76,pi/schedule/getDataFor76,,,,,,,,,,封昊
+94,pi,指标TPiRltIndex77,pi/schedule/getDataFor77,,,,,,,,,,封昊
+95,pi,指标TPiRltIndex79,pi/schedule/findTPiRltIndex79,,,,,,,,,,封昊
+96,pi,指标TPiRltIndex81,pi/schedule/findTPiRltIndex81,,,,,,,,,,封昊
+97,pi,指标TPiRltIndex82,pi/schedule/getDataFor82,,,,,,,,,,封昊
+98,pi,指标TPiRltIndex96,pi/schedule/getDataFor96,,,,,,,,,,封昊
+99,pi,日执行指标定时-autoEndClaim-办结汇总报表列表,pi/schedule/autoEndClaimByDay,,,,,,,,,,于泽桐
+100,pi,月执行指标定时-autoEndClaim-办结汇总报表列表,pi/schedule/autoEndClaimByMonth,,,,,,,,,,于泽桐
+101,pi,自动化全流程监控统计数量写入--automationProcessMonitorJob,pi/schedule/automationProcessMonitorJob,,,,,,,,,,于泽桐
+102,pi,月执行指标定时-innerTurnBackReport,pi/schedule/innerTurnBackReport,,,,,,,,,,赵旭光
+103,pi,月执行指标定时-ouDetailReportDataProcess,pi/schedule/ouDetailReportDataProcess,,,,,,,,,,赵旭光
+104,pi,月执行指标定时-deptReportDataProcess,pi/schedule/deptReportDataProcess,,,,,,,,,,赵旭光
+105,pi,月执行指标定时-businessTurnBackReport,pi/schedule/businessTurnBackReportByMonth,,,,,,,,,,赵旭光
+106,pi,piSchedulerByMonth13,pi/schedule/piSchedulerByMonth13,,,,,,,,,,赵旭光
