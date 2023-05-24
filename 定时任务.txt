@@ -1,221 +1,221 @@
-¶¨Ê±ÅäÖÃ	¹¦ÄÜ	Èë¿Ú	ÊÇ·ñ×Ô¶¯Éú³É±¨ÕËµ¥	ÊÇ·ñĞèÒª¸¶¿î	ÀàĞÍ	Ö´ĞĞÆµÂÊ	Ö´ĞĞÆµÂÊ	
-importTRCertJobDetail\#importTRCertTrigger	µç»ã¡¢×¨Ïî×Ê½ğ×Ô¶¯µ¼Èë¸¶¿îÆ¾Ö¤	com.ibm.gbs.efinance.business.eip.service.control.ImportTRCertService	·ñ	·ñ	±¨ÕË¹¦ÄÜ			
-sendPaymentListDetail\#sendPaymentListTrigger	¸¶¿î¼Æ»®×Ô¶¯·¢ËÍ²ÆË¾ÏµÍ³	com.ibm.gbs.efinance.business.eip.service.control.SendPaymentListService	·ñ	·ñ	±¨ÕË¹¦ÄÜ			
-importLedgerCertDetail\#importLedgerCertTrigger	´ı´¦ÀíÄÚÍø×Ô¶¯µ¼Èë¸¶¿îÆ¾Ö¤	com.ibm.gbs.efinance.business.eip.service.control.ImportLedgerCertService	·ñ	·ñ	±¨ÕË¹¦ÄÜ			
-sendLedgerServiceDetail\#sendLedgerServiceTrigger	´ò¿ª±í×Ô¶¯·¢ËÍ²ÆË¾ÏµÍ³	com.ibm.gbs.efinance.business.eip.service.control.SendLedgerService	·ñ	·ñ	±¨ÕË¹¦ÄÜ			
-sendImportTRDetail\#sendImportTRTrigger	¸¶¿î¼Æ»®ÒÑÈ·ÈÏÊı¾İ×Ô¶¯·¢ËÍµ½´ıµ¼Èë	com.ibm.gbs.efinance.business.eip.service.control.SendImportTRService	·ñ	·ñ	±¨ÕË¹¦ÄÜ			
-sendEmailJobDetail\#sendEmailTrigger	¡¾½è¿îµ¥¡¿¡¢¡¾Ô¤¸¶¿îµ¥¡¿µÄ·¢ËÍOAÓÊ¼ş¡¾½è¿îÔ¤¸¶ÓÊ¼şÌáĞÑ¹¦ÄÜ¡¿	com.ibm.gbs.efinance.service.mail.service.impl.SendUrgeEmailImpl	·ñ	·ñ	±¨ÕË¹¦ÄÜ			
-cashFlowDetail\#cashFlowTrigger	Í¬²½ÏÖ½ğÁ÷	com.ibm.gbs.efinance.ylService.erp.ebs_ap_032_cashflow.service.serviceImpl.CashFlowServiceImpl	·ñ	·ñ	Êı¾İÍ¬²½			
-validateCertificateJobDetail\#validateCertificateTrigger	¸¶¿îÆ¾Ö¤Ñéµ¼ÈëÑéÖ¤·şÎñ	com.ibm.gbs.efinance.business.eip.service.validateTimeTaskService.ValidateCertificateInfoSerivce	·ñ	·ñ	½Ó¿ÚÑéÖ¤			
-tmisPaymentCustomersDetail\#tmisPaymentCustomersTrigger	³Ğ¶Ò»ãÆ±¿Í»§ĞÅÏ¢Í¬²½	com.ibm.gbs.efinance.ylService.erp.CUX_FSSC_PAYMENT_CUSTOMERS_V.service.serviceImpl.TmisPaymentCustomersServiceImpl	·ñ	·ñ	Êı¾İÍ¬²½			
-tmisApProfileOptionsDetail\#tmisApProfileOptionsTrigger	»á¼ÆÖ°ÔğÍ¬²½	com.ibm.gbs.efinance.ylService.erp.ap_profile_options.service.serviceImpl.TmisApProfileOptionsServiceImpl	·ñ	·ñ	Êı¾İÍ¬²½			
-glsegmentCompanyDetail\#glsegmentCompanyTrigger	°Ë¶Î-¹«Ë¾¶ÎÍ¬²½	com.ibm.gbs.efinance.ylService.erp.ebs_gl_09_glsegmentCompany.service.serviceImpl.GlsegmentCompanyServiceImpl	·ñ	·ñ	Êı¾İÍ¬²½			
-glsegmentCourseDetail\#glsegmentCourseTrigger	°Ë¶Î-¿ÆÄ¿¶ÎÍ¬²½	com.ibm.gbs.efinance.ylService.erp.ebs_gl_09_glsegmentCourse.service.serviceImpl.GlsegmentCourseServiceImpl	·ñ	·ñ	Êı¾İÍ¬²½			
-glsegmentDepartmentDetail\#glsegmentDepartmentTrigger	°Ë¶Î-²¿ÃÅ¶ÎÍ¬²½	com.ibm.gbs.efinance.ylService.erp.ebs_gl_09_glsegmentDepartment.service.serviceImpl.GlsegmentDepartmentServiceImpl	·ñ	·ñ	Êı¾İÍ¬²½			
-glsegmentEnterpriseDetail\#glsegmentEnterpriseTrigger	°Ë¶Î-ÊÂÒµ²¿¶ÎÍ¬²½	com.ibm.gbs.efinance.ylService.erp.ebs_gl_09_glsegmentEnterprise.service.serviceImpl.GlsegmentEnterpriseServiceImpl	·ñ	·ñ	Êı¾İÍ¬²½			
-glsegmentInterCompanyDetail\#glsegmentInterCompanyTrigger	°Ë¶Î-¹«Ë¾¼ä¶ÎÍ¬²½	com.ibm.gbs.efinance.ylService.erp.ebs_gl_09_glsegmentInterCompany.service.serviceImpl.GlsegmentInterCompanyServiceImpl	·ñ	·ñ	Êı¾İÍ¬²½			
-glsegmentProductDetail\#glsegmentProductTrigger	°Ë¶Î-²úÆ·¶ÎÍ¬²½	com.ibm.gbs.efinance.ylService.erp.ebs_gl_09_glsegmentProduct.service.serviceImpl.GlsegmentProductServiceImpl	·ñ	·ñ	Êı¾İÍ¬²½			
-glsegmentStandbyDetail\#glsegmentStandbyTrigger	°Ë¶Î-±¸ÓÃ¶ÎÍ¬²½	com.ibm.gbs.efinance.ylService.erp.ebs_gl_09_glsegmentStandby.service.serviceImpl.GlsegmentStandbyServiceImpl	·ñ	·ñ	Êı¾İÍ¬²½			
-glsegmentSubgoalDetail\#glsegmentSubgoalTrigger	°Ë¶Î-×ÓÄ¿¶ÎÍ¬²½	com.ibm.gbs.efinance.ylService.erp.ebs_gl_09_glsegmentSubgoal.service.serviceImpl.GlsegmentSubgoalServiceImpl	·ñ	·ñ	Êı¾İÍ¬²½			
-glCodeCombinationCwgxDetail\#glCodeCombinationCwgxTrigger	°Ë¶Î×éºÏÍ¬²½	com.ibm.gbs.efinance.ylService.erp.gl_code_combination_cwgx.service.serviceImpl.GlCodeCombinationCwgxServiceImpl	·ñ	·ñ	Êı¾İÍ¬²½			
-tMisAllPeopleDetail\#tMisAllPeopleTrigger	TMisAllPeople±íÊı¾İÍ¬²½	com.ibm.gbs.efinance.ylService.erp.vendor.people.service.serviceImpl.TMisAllPeopleServiceImpl	·ñ	·ñ	Êı¾İÍ¬²½			Î´²éµ½±íÊ¹ÓÃµÄµØ·½
-tMisApSuppliersDetail\#tMisApSuppliersTrigger	¹©Ó¦ÉÌÍ·ĞÅÏ¢Í¬²½	com.ibm.gbs.efinance.ylService.erp.vendor.suppliers.service.serviceImpl.TMisApSuppliersServiceImpl	·ñ	·ñ	Êı¾İÍ¬²½			
-tMisApSuppliersSitesDetail\#tMisApSuppliersSitesTrigger	¹©Ó¦ÉÌµØµãĞÅÏ¢Í¬²½	com.ibm.gbs.efinance.ylService.erp.vendor.supplierssites.service.serviceImpl.TMisApSuppliersSitesServiceImpl	·ñ	·ñ	Êı¾İÍ¬²½			
-hrOrgMapErpOrgDetail\#hrOrgMapErpOrgTrigger	HR²¿ÃÅÓëERP²¿ÃÅÓ³Éä¹ØÏµÍ¬²½	com.ibm.gbs.efinance.ylService.erp.hrorg_map_erporg.service.serviceImpl.HrOrgMapErpOrgServiceImpl	·ñ	·ñ	Êı¾İÍ¬²½			
-organizationHrDetail\#organizationHrTrigger	HR²¿ÃÅĞÅÏ¢Í¬²½	com.ibm.gbs.efinance.ylService.hr.ebs_hr_organization.service.serviceImpl.OrganizationHrServiceImpl	·ñ	·ñ	Êı¾İÍ¬²½			
-peopleHrDetail\#peopleHrTrigger	HRÈËÔ±ĞÅÏ¢Í¬²½	com.ibm.gbs.efinance.ylService.hr.ebs_hr_people.service.serviceImpl.PeopleHrServiceImpl	·ñ	·ñ	Êı¾İÍ¬²½			
-positioncollectHrDetail\#positioncollectHrTrigger	THrPositonCollectInfo±íÊı¾İÍ¬²½	com.ibm.gbs.efinance.ylService.hr.ebs_hr_positioncollect.service.serviceImpl.PositioncollectHrServiceImpl	·ñ	·ñ	Êı¾İÍ¬²½			Êı¾İ±íÎŞÊı¾İ
-AccountInfoPortJobDetail\#AccountInfoPortJobTrigger	Í¬²½²ÆË¾ÒøĞĞĞÅÏ¢	com.ibm.gbs.efinance.ylService.fund.accountinfoPort.AccountInfoPortServiceImpl	·ñ	·ñ	Êı¾İÍ¬²½			
-BankAccountInformationJobDetail\#BankAccountInformationJobTrigger	Í¬²½ERP¸¶¿îÒøĞĞĞÅÏ¢	com.ibm.gbs.efinance.business.eip.service.control.BankAccountInformationJob	·ñ	·ñ	Êı¾İÍ¬²½			
-CurrencyInfoPortJobDetail\#CurrencyInfoPortJobTrigger	Í¬²½²ÆË¾±ÒÖÖĞÅÏ¢	com.ibm.gbs.efinance.ylService.fund.currencyInfoPort.CurrencyInfoPortServiceImpl	·ñ	·ñ	Êı¾İÍ¬²½			
-OfficeInfoPortJobDetail\#OfficeInfoPortJobTrigger	Í¬²½²ÆË¾°ìÊÂ´¦µØµã	com.ibm.gbs.efinance.ylService.fund.officeInfoPort.OfficeInfoPortServiceImpl	·ñ	·ñ	Êı¾İÍ¬²½			
-confirmPayListJobDetail\#confirmPayListTrigger	¸¶¿î¼Æ»®È·ÈÏ³¬Ê±Ç¿ÖÆÈ·ÈÏ	com.ibm.gbs.efinance.business.eip.service.control.ConfirmPayListService	·ñ	·ñ	±¨ÕË¹¦ÄÜ			
-ebsClaimjobDetail\#ebsClaimTrigger	¸üĞÂÆ¾Ö¤³ØAttribute13×Ö¶ÎÎª¿ÕµÄÊı¾İ	com.ibm.gbs.efinance.business.eip.service.control.ebsClaimNoJob	·ñ	·ñ	±¨ÕË¹¦ÄÜ			×îºóÃ»ÓĞÖ´ĞĞupdate·½·¨
-tMisTermsDetail\#tMisTermsTrigger	TMisTermsÊı¾İ±íÍ¬²½	com.ibm.gbs.efinance.ylService.erp.vendor.terms.service.serviceImpl.TMisTermsServiceImpl	·ñ	·ñ	Êı¾İÍ¬²½			Î´²éµ½±íÊ¹ÓÃµÄµØ·½
-getGlDocSequenceDetail\#getGlDocSequenceTrigger	Æ¾Ö¤Í·ĞÅÏ¢Í¬²½	com.ibm.gbs.efinance.ylService.erp.get_gl_doc_sequence.service.serviceImpl.GetGlDocSequenceServiceImpl	·ñ	·ñ	Êı¾İÍ¬²½			
-SendQueueRecordDetail\#sendQueueRecordTrigger	¶¨Ê±ĞŞ¸´¹ÒÓ°Ïñ·Öµ¥£¬Ó°Ïñ·Öµ¥	com.ibm.gbs.efinance.business.eip.service.control.SendQueueRecordJob	·ñ	·ñ	±¨ÕË¹¦ÄÜ			
-soaFsscPdflogServiceDetail\#soaFsscPdflogServiceTrigger	²éÑ¯EBSÆ¾Ö¤Éú³ÉPDF¼°´«ËÍ±¨ÕÊÆ½Ì¨×´Ì¬½Ó¿Ú·şÎñ	com.ibm.gbs.efinance.ylService.erp.CUX_SOA_FSSC_PDFLOG_V.SoaFsscPdflogJob	·ñ	·ñ	Êı¾İÍ¬²½			
-FundOrderQueryJobDetail\#FundOrderQueryJobTrigger	²éÑ¯²ÆË¾Ö§¸¶×´Ì¬£¬²éÑ¯×¨ÏîÒøĞĞÖ§¸¶×´Ì¬	com.ibm.gbs.efinance.business.eip.service.control.FundOrderQueryJob	·ñ	·ñ	½Ó¿ÚÑéÖ¤			
-monitorProcessjobDetail\#monitorProcessTrigger	¸üĞÂMonitorJob±íÊ±¼ä	com.ibm.gbs.efinance.business.eip.service.control.MonitorProcessJob	·ñ	·ñ	±¨ÕË¹¦ÄÜ			Î´²éµ½±íÊ¹ÓÃµÄµØ·½
-queryMilkPayAndUpdateDetail\#queryMilkPayAndUpdateTrigger	ERPÔ­ÄÌ¸¶¿î¼Æ»®ĞĞÍ¬²½ÒÔ¼°×´Ì¬»ØĞ´	com.ibm.gbs.efinance.ylService.erp.ebs_ap_trmbspaylist.queryMilkPayAndUpdateJob	·ñ	·ñ	Êı¾İÍ¬²½			Ó¦¸ÃÒÑ¾­²»Ê¹ÓÃÁË£¬ĞèÒªÈ·ÈÏ
-ClearAccountHandleCountDetail\#ClearAccountHandleCountTrigger	Çå³ı»á¼Æ½Óµ¥Á¿	com.ibm.gbs.efinance.business.eip.service.control.validate.ClearAccountHandleCount	·ñ	·ñ	±¨ÕË¹¦ÄÜ			
-CUX_FSSC_OU_VDetail\#CUX_FSSC_OU_VTrigger	Í¬²½È«OUĞÅÏ¢	com.ibm.gbs.efinance.ylService.erp.CUX_FSSC_OU_V.CUX_FSSC_OU_VJob	·ñ	·ñ	Êı¾İÍ¬²½	Ìì	Ã¿Ìì2µã22·ÖÖ´ĞĞÒ»´Î	
-eimOfZJServicejobDetail\#eimOfZJServiceTrigger	²ÆË¾»Øµ¥ÎÄ¼ş¡¢×¨Ïî×Ê½ğ»Øµ¥ÎÄ¼ş¹Ò½Ó	com.ibm.gbs.efinance.business.eip.service.control.EimOfZJServiceJob	·ñ	·ñ	±¨ÕË¹¦ÄÜ	Ìì	Ã¿Ìì3µã26·ÖÖ´ĞĞÒ»´Î	
-matchNeedSendEmailJobDetail\#matchNeedSendEmailJobTrigger	¹Ò½ÓÓ°Ïñ±¨ÕËµ¥¡¢Î´Íê³É²¹µ¥±¨ÕËµ¥±£´æ´ıÍÆËÍÓÊ¼şĞÅÏ¢¶¨Ê±ĞÅÏ¢	com.ibm.gbs.efinance.business.eip.service.control.validate.MatchNeedSendEmailJob	·ñ	·ñ	±¨ÕË¹¦ÄÜ	Ìì	Ã¿Ìì8µã10Ö´ĞĞÒ»´Î	
-sendEmailNoticeImageJobDetail\#sendEmailNoticeImageJobTrigger	¹Ò½ÓÓ°Ïñ±¨ÕËµ¥¡¢Î´Íê³É²¹µ¥±¨ÕËµ¥ÍÆËÍÓÊ¼şĞÅÏ¢¶¨Ê±	com.ibm.gbs.efinance.business.eip.service.control.validate.SendEmailNoticeImageJob	·ñ	·ñ	±¨ÕË¹¦ÄÜ	Ìì	Ã¿Ìì9µã10Ö´ĞĞÒ»´Î	
-turnBackClaimJobDetail\#turnBackClaimJobTrigger	Ó°Ïñ³¤ÆÚÎ´¹Ò½Ó£¬ÏµÍ³×Ô¶¯ÍË»Ø¡£ÍË»ØÊ§°ÜÖØÖÃµ½²İ¸å	com.ibm.gbs.efinance.business.eip.service.control.TurnBackClaimJob	·ñ	·ñ	±¨ÕË¹¦ÄÜ	¶à´Î	Ã¿Á½¸öĞ¡Ê±11·ÖÖ´ĞĞÒ»´Î	
-borrowingFinishActivityJobDetail\#borrowingFinishActivityJobTrigger	É¾³ı´óÓÚ30ÌìĞ¡ÓÚ60Ìì×Ê½ğ»Øµ¥¹Ò½ÓÊ§°ÜµÄÓ°Ïñ¡£É¾³ıeimImageFile±íÃ»ÓĞimage_idµÄÓ°ÏñĞÅÏ¢¡£×Ô¶¯´´½¨±¨±íÈ¨ÏŞ¡£	com.ibm.gbs.aam.controller.BorrowingFinishActivityJob	·ñ	·ñ	±¨ÕË¹¦ÄÜ	Ìì	Ã¿Ìì23µã10·ÖÖ´ĞĞÒ»´Î	
-borrowingSendEmailJobDetail\#borrowingSendEmailJobTrigger	Ö½ÖÊ½èÔÄÑÓÆÚÎ´¹é»¹´ß·¢ÓÊ¼ş·şÎñ£¬¸üĞÂebs_invoice_pay_gl±íis_associated×Ö¶Î£¬ÉèÖÃºÚÃûµ¥·şÎñ	com.ibm.gbs.aam.controller.BorrowingSendEmailJob	·ñ	·ñ	±¨ÕË¹¦ÄÜ	Ìì	Ã¿Ìì0µã50·ÖÖ´ĞĞÒ»´Î	
-pendingServiceJobDetail\#pendingServiceJobTrigger	²éÑ¯·¢ËÍOA´ı°ìÊ§°ÜµÄ±¨ÕËµ¥¡¢¸¶¿î¼Æ»®ĞĞÈ·ÈÏĞÅÏ¢ÖØĞÂ·¢ËÍ´ı°ìĞÅÏ¢	com.ibm.gbs.efinance.business.eip.service.control.PendingServiceJob	·ñ	·ñ	±¨ÕË¹¦ÄÜ	¶à´Î	Ã¿20·ÖÖÓÖ´ĞĞÒ»´Î	
-quyGlVoucherInfoDetail\#quyGlVoucherInfoTrigger	Í¬²½Æ¾Ö¤ĞĞĞÅÏ¢	com.ibm.gbs.efinance.ylService.erp.fssc_ebs_gl_quyglvoucherinfo.QuyGlVoucherInfoJob	·ñ	·ñ	Êı¾İÍ¬²½	¶à´Î	Ã¿10·ÖÖÓÖ´ĞĞÒ»´Î	
-processUtil1JobDetail\#processUtil1JobTrigger	ĞŞ¸´¹Ò½ÓÓ°ÏñÎ´±ä×´Ì¬IsHookImage	com.ibm.gbs.efinance.business.eip.service.control.ProcessUtil1Job	·ñ	·ñ	±¨ÕË¹¦ÄÜ	¶à´Î	Ã¿5·ÖÖÓÖ´ĞĞÒ»´Î	
-processUtil2JobDetail\#processUtil2JobTrigger	t_process_wi_record_queueÓĞÊı¾İ£¬µ«ÊÇt_process_wi_recordÃ»ÓĞÊı¾İ£¬´ı°ìÎªÉú³É	com.ibm.gbs.efinance.business.eip.service.control.ProcessUtil2Job	·ñ	·ñ	±¨ÕË¹¦ÄÜ	¶à´Î	Ã¿5·ÖÖÓÖ´ĞĞÒ»´Î	
-processUtil3JobDetail\#processUtil3JobTrigger	Á÷³Ì±íÊı¾İÓëÖ÷±í»·½ÚÊı¾İ²»¶ÔÓ¦£¬¶¨Ê±ĞŞ¸´	com.ibm.gbs.efinance.business.eip.service.control.ProcessUtil3Job	·ñ	·ñ	±¨ÕË¹¦ÄÜ	¶à´Î	Ã¿5·ÖÖÓÖ´ĞĞÒ»´Î	
-processUtilJobDetail\#processUtilJobTrigger	¸ù¾İÆ¾Ö¤Í·±íÓëĞĞ±íÉú³Épdf£¬¹Ò½Óµ½±¨ÕËµ¥¸½¼şÁĞ±í	com.ibm.gbs.efinance.business.eip.service.control.ProcessUtilJob	·ñ	·ñ	±¨ÕË¹¦ÄÜ	¶à´Î	Ã¿10·ÖÖÓÖ´ĞĞÒ»´Î	
-budanTurnBackJobDetail\#budanTurnBackJobTrigger	²¹µ¥³¬ÆÚÎ´´¦Àí£¬ÏµÍ³×Ô¶¯ÍË»Ø£¬É¾³ı²¹µ¥Á÷³Ì	com.ibm.gbs.efinance.business.eip.service.control.BudanTurnBackJob	·ñ	·ñ	±¨ÕË¹¦ÄÜ	¶à´Î	Ã¿20·ÖÖÓÖ´ĞĞÒ»´Î	
-tpmClaimInfoJobDetail\#tpmClaimInfoJobTrigger	ÏòTPMÏµÍ³´«µİ±¨ÕËµ¥ĞÅÏ¢	com.ibm.gbs.efinance.business.eip.service.control.TpmClaimInfoJob	·ñ	·ñ	Êı¾İÍ¬²½	¶à´Î	Ã¿5·ÖÖÓÖ´ĞĞÒ»´Î	
-changeArchiveIsGuiDangJobDetail\#changeArchiveIsGuiDangJobTrigger	ĞŞ¸ÄÒÑ¹éµµµ«Æ¾Ö¤³ØÎ´¸Ä×´Ì¬	com.ibm.gbs.aam.controller.ChangeArchiveIsGuiDangJob	·ñ	·ñ	Êı¾İÍ¬²½	Ìì	Ã¿Ìì23µã20·ÖÖ´ĞĞÒ»´Î	
-importApInvoiceJobDetail\#importApInvoiceTrigger	½ğµÂÈğT026£¬T027£¬T036±¨ÕËµ¥µ¼Èë	com.ibm.gbs.efinance.business.eip.service.control.ImportApInVoiceJob	·ñ	·ñ	±¨ÕË¹¦ÄÜ	¶à´Î	Ã¿5·ÖÖÓÖ´ĞĞÒ»´Î	
-t036AutoArchiveJobDetail\#t036AutoArchiveJobTrigger	T036Ä¿Â¼»¯ÎŞÆ±¹ÒÕË×Ô¶¯¹éµµ£¬erpÆ¾Ö¤Éú³É×Ô¶¯°ì½áĞéÄâ±¨ÕËµ¥-×Ô¶¯¹éµµ£¬°´¹æÔòÅäÖÃ±¨ÕËµ¥-×Ô¶¯¹éµµ	com.ibm.gbs.aam.controller.T036AutoArchiveJob	·ñ	·ñ	±¨ÕË¹¦ÄÜ	Ìì	Ã¿Ìì23µã30·ÖÖ´ĞĞÒ»´Î	
-importApCertJobDetail\#importApCertTrigger	ĞéÄâ¸¶¿î£¬»ãĞÅ¸¶¿î£¬ÒøĞĞÍĞÊÕ£¬³Ğ¶Ò»ãÆ±Éú³É¸¶¿îÆ¾Ö¤	com.ibm.gbs.efinance.business.eip.service.control.ImportApCertJob	·ñ	·ñ	±¨ÕË¹¦ÄÜ	¶à´Î	Ã¿2·ÖÖÓÖ´ĞĞÒ»´Î	
-importApCertMergeJobDetail\#importApCertMergeTrigger	ºÏ²¢¸¶¿îÆ¾Ö¤µ¼Èë	com.ibm.gbs.efinance.business.eip.service.control.ImportApCertMergeJob	·ñ	·ñ	±¨ÕË¹¦ÄÜ	¶à´Î	Ã¿2·ÖÖÓÖ´ĞĞÒ»´Î	
-segment1SrvJobDetail\#segment1SrvJobTrigger	Í¬²½×Ê²úÒ»¼¶¶ş¼¶Èı¼¶µØµã¶¨Ê±	com.ibm.gbs.efinance.ylService.erp.ebs_esb_quy_fa_loc.job.Segment1SrvJob	·ñ	·ñ	Êı¾İÍ¬²½	Ìì	Ã¿Ìì2µã01·ÖÖ´ĞĞÒ»´Î	
-valiCancelGlJobDetail\#valiCancelGlTrigger	ÑéÖ¤³åÏú×ÜÕËÆ¾Ö¤½á¹û²éÑ¯	com.ibm.gbs.efinance.business.eip.service.control.ValiCancelGlJob	·ñ	·ñ	½Ó¿ÚÑéÖ¤	¶à´Î	Ã¿Á½¸öĞ¡Ê±35·ÖÖ´ĞĞÒ»´Î	
-createClaimAutoArchiveJobDetail\#createClaimAutoArchiveJobTrigger	¸ù¾İÆ¾Ö¤Í·±í×Ô¶¯Éú³ÉĞéÄâ±¨ÕËµ¥	com.ibm.gbs.aam.controller.CreateClaimAutoArchiveJob	·ñ	·ñ	±¨ÕË¹¦ÄÜ	Ìì	Ã¿Ìì22µã30·ÖÖ´ĞĞÒ»´Î	
-updateVolumeJobDetail\#updateVolumeJobTrigger	¸üĞÂ¼Ä½»Çåµ¥Ã÷Ï¸ÖĞ²áºÅ·şÎñ	com.ibm.gbs.aam.controller.UpdateVolumeJob	·ñ	·ñ	±¨ÕË¹¦ÄÜ	Ìì	Ã¿Ìì15µã07·ÖÖ´ĞĞÒ»´Î	
-ccSendEmailJobDetail\#ccSendEmailJobTrigger	½â´ğÍê³ÉµÄ¹¤µ¥¼ÇÂ¼·¢ËÍÓÊ¼ş¶¨Ê±ÈÎÎñ£¬ÒÑ¼ÇÂ¼µÄ·¢ËÍÓÊ¼ş	com.ibm.gbs.efinance.business.eip.service.control.CcSendEmailJob	·ñ	·ñ	±¨ÕË¹¦ÄÜ	¶à´Î	Ã¿10·ÖÖÓÖ´ĞĞÒ»´Î	
-tVoucherSpilitJobDetail\#tVoucherSpilitJobTrigger	Æ¾Ö¤¶ÏºÅ²éÑ¯	com.ibm.gbs.efinance.business.eip.service.control.TVoucherSpilitJob	·ñ	·ñ	±¨ÕË¹¦ÄÜ	Ìì	Ã¿Ìì0µã30·ÖÖ´ĞĞÒ»´Î	
-tVoucherSpilit1JobDetail\#tVoucherSpilit1JobTrigger	Æ¾Ö¤¶ÏºÅµ÷ÓÃ½Ó¿ÚÍ¬²½Æ¾Ö¤Í·Êı¾İ	com.ibm.gbs.efinance.business.eip.service.control.TVoucherSpilit1Job	·ñ	·ñ	Êı¾İÍ¬²½	Ìì	Ã¿Ìì0µã50·ÖÖ´ĞĞÒ»´Î	
-tVoucherSpilit2JobDetail\#tVoucherSpilit2JobTrigger	Æ¾Ö¤¶ÏºÅµ÷ÓÃ½Ó¿ÚÍ¬²½Æ¾Ö¤ĞĞÊı¾İ	com.ibm.gbs.efinance.business.eip.service.control.TVoucherSpilit2Job	·ñ	·ñ	Êı¾İÍ¬²½	¶à´Î	Ã¿Ìì1¡¢2¡¢3¡¢4¡¢5µã30·ÖÍ¬²½Êı¾İ	
-updateNameForImageJobDetail\#updateNameForImageJobTrigger	¸üĞÂÓ°ÏñÈÎÎñ³Ø»·½ÚÃû³Æ¶¨Ê±	com.ibm.gbs.efinance.business.eip.service.control.updateNameForImageJob	·ñ	·ñ	±¨ÕË¹¦ÄÜ	¶à´Î	Ã¿5·ÖÖ´ĞĞÒ»´Î°¡	
-startConfirmPayListJobDetail\#startConfirmPayListTrigger	¸¶¿î¼Æ»®×Ô¶¯ÍÆËÍÈ·ÈÏ							
-valiInvoiceLibraryjobDetail\#valiInvoiceLibraryTrigger								
-ocrUploadjobDetail\#ocrUploadTrigger								
-ocrClaimValidatejobDetail\#ocrClaimValidateTrigger								
-quyInvItemInfoDetail\#quyInvItemInfoTrigger								
-quyArReMethodDetail\#quyArReMethodTrigger								
-quyArBatchSourceDetail\#quyArBatchSourceTrigger								
-quyArCustSiteInfoDetail\#quyArCustSiteInfoTrigger								
-quyArReMethodDetail\#quyArReMethodTrigger								
-arQuyreceiptRemarkDetail\#arQuyreceiptRemarkTrigger								
-arQuyreceiptActivityDetail\#arQuyreceiptActivityTrigger								
-quyArAmtRemainDetail\#quyArAmtRemainTrigger								
-updateFlowExpireDetail\#updateFlowExpireTrigger								
-syncAccountTransFlowDetail\#syncAccountTransFlowTrigger								
-importT008AndT015InvoiceDetail\#importT008AndT015InvoiceTrigger								
-quyInvUomCodeDetail\#quyInvUomCodeTrigger								
-quyRaCustTrxTypeDetail\#quyRaCustTrxTypeTrigger								
-quyInvItemInfoDetail\#quyInvItemInfoTrigger								
-claimGenerateRulesServiceDetail\#claimGenerateRulesServiceTrigger								
-claimNotEndJobDetail\#claimNotEndTrigger								
-createT014ClaimJobDetail\#createT014ClaimJobTrigger								
-getNeedAlertJobDetail\#getNeedAlertJobTrigger								
-CDHPSendEmailJobDetail\#CDHPSendEmailJobTrigger								
-updateFlowExpireDetail\#updateFlowExpireTrigger								
-claimNotEndJobDetail\#claimNotEndTrigger								
-voucherReportManagerDetail\#voucherReportManagerTrigger								
-compareFlowDataDetail\#compareFlowDataTrigger								
-quyArAmtMarginDetail\#quyArAmtMarginTrigger								
-saveOcrProcessStatusDetail\#saveOcrProcessStatusTrigger								
-verificationSendbackClaimDetail\#verificationSendbackClaimTrigger								
-ocrUploadCommonjobDetail\#ocrUploadCommonTrigger								
-ocrVerificationCommonjobDetail\#ocrVerificationCommonTrigger								
-ocrUploadSwitchOffjobDetail\#ocrUploadSwitchOffTrigger								
-ocrVerificationSwitchOffjobDetail\#ocrVerificationSwitchOffTrigger								
-importT050JobDetail\#importT050Trigger								
-importT001ToPublicJobDetail\#importT001ToPublicTrigger								
-clearT034MilkDataPoolJobDetail\#clearT034MilkDataPoolTrigger								
-travelEmployeeTurnoverDraftDetail\#travelEmployeeTurnoverDraftTrigger								
-hrdepRoleUpdateDetail\#hrdepRoleUpdateTrigger								
-travelDeleteDraftDetail\#travelDeleteDraftTrigger								
-autoSignDetail\#autoSignTrigger								
-importLedgerPaymentJobDetail\#importLedgerPaymentTrigger								
-searchExportDetail\#searchExportTrigger								
-autoProcessT020ServiceDetail\#autoProcessT020ServiceTrigger								
-importLedgerTRPaymentJobDetail\#importLedgerTRPaymentTrigger								
-fundAllocationSignJobDetail\#fundAllocationSignTrigger								
-paylistUpdateDetail\#paylistUpdateTrigger								
-assetCostDetail\#assetCostTrigger								
-assetDistributDetail\#assetDistributTrigger								
-assetDeprnDetail\#assetDeprnTrigger								
-assetPhysicalDetail\#assetPhysicalTrigger								
-overdueTurnBackClaimJobDetail\#overdueTurnBackClaimJobTrigger								
-syncAcptBillDetail3\#SyncAcptBillTrigger3								
-syncAcptBillDetail\#SyncAcptBillTrigger1								
-syncAcptBillDetail2\#SyncAcptBillTrigger2								
-syncAcptBillDetail4\#SyncAcptBillTrigger4								
-syncAcptBillDetail5\#SyncAcptBillTrigger5								
-t057PaylistConfirmDetail\#t057PaylistConfirmTrigger								
-currencyExchangerateDetail\#currencyExchangerateTrigger								
-importFoerignCurrencyPaymentJobDetail\#importFoerignCurrencyPaymentTrigger								
-claimTravelFeePushOADetail\#claimTravelFeePushOATrigger								
-paymentFailUpdateVendorDetail\#paymentFailUpdateVendorTrigger								
-paymentFailSendMailDetail\#paymentFailSendMailTrigger								
-payFailAutoCreateClaimDetail\#payFailAutoCreateClaimTrigger								
-abmAutoSignForJob\#abmAutoSignForJobTrigger								
-abmAutoReconciliationJob\#abmAutoReconciliationTrigger								
-assetCategoriDetail\#assetCategoriTrigger								
-cleanImportTimeoutJob\#cleanImportTimeoutJobTrigger								
-automationProcessMonitorJob\#automationProcessMonitorJobTrigger								
-syncBwInvoiceStatusForHisJobDetail\#syncBwInvoiceStatusForHisTrigger								
-automationProcessMonitorJob\#automationProcessMonitorJobTrigger								
-createT033T040ClaimJobDetail\#createT033T040ClaimJobTrigger								
-autoSign4T015T016Detail\#autoSign4T015T016Trigger								
-autoSuppleRoleAuthDetail\#autoSuppleRoleAuthTrigger								
-fsscGroupinfoSendEhrDetail\#fsscGroupinfoSendEhrTrigger								
-updateSysTaskDetail\#updateSysTaskTrigger								
-syncTRAccountBalanceDetail\#syncTRAccountBalanceTrigger								
-changeUserStatus4EndValidDateDetail\#changeUserStatus4EndValidDateTrigger								
-autoGenTaxTabDetail\#autoGenTaxTabTrigger								
-resetClaimGenTaxStatusDetail\#resetClaimGenTaxStatusTrigger								
-autoProcessT001ServiceDetail\#autoProcessT001ServiceTrigger								
-autoProcessT001TaxImageServiceDetail\#autoProcessT001TaxImageServiceTrigger								
-sendEmail4ClaimNosDetail\#sendEmail4ClaimNosTrigger								
-syncBwInvoiceStatusForHisJobDetail\#syncBwInvoiceStatusForHisTrigger								
-allInvoiceAuthenticationDetail\#allInvoiceAuthenticationTrigger								
-allInvoiceAuthenticationResultDetail\#allInvoiceAuthenticationResultTrigger								
-cancelInvoiceAuthenticationResultDetail\#cancelInvoiceAuthenticationResultTrigger								
-executeInsertDaidi2JinXClaimsJobDetail\#executeInsertDaidi2JinXClaimsJobTrigger								
-itsmQaJob\#itsmQaJobTrigger								
-fullProcessMonitoringOfFundsMongoJob\#fullProcessMonitoringOfFundsMongoJobTrigger								
-autoGenOcrRecogReportServiceDetail\#autoGenOcrRecogReportServiceTrigger								
-claimProjectFeePushOADetail\#claimProjectFeePushOATrigger								
-fssc2TaxClaimDataServiceDetail\#fssc2TaxClaimDataServiceTrigger								
-fssc2TaxInvoiceDataServiceDetail\#fssc2TaxInvoiceDataServiceTrigger								
-claimDlerDataPushDetail\#claimDlerDataPushTrigger								
-updateUserGroupIdErrDetail\#updateUserGroupIdErrTrigger								
-updateDelayInvoiceImportServiceDetail\#updateDelayInvoiceImportServiceTrigger								
-leaseContractTerminateJobDetail\#leaseContractTerminateTrigger								
-createT059InterestClaimJobDetail\#createT059InterestClaimTrigger								
-insertT059InterestJobDetail\#insertT059InterestTrigger								
-claimProjectFeeRealPushOADetail\#claimProjectFeeRealPushOATrigger								
-autoProcessBizAccountActivityServiceJob\#autoProcessBizAccountActivityServiceTrigger								
-ledgerPayListEmailNotifactionServiceDetail\#ledgerPayListEmailNotifactionServiceTrigger								
-executeHandleTCxinvoiceQxAuthenticationDetail\#executeHandleTCxinvoiceQxAuthenticationTrigger								
-executeGetHandlingTCxinvoiceQxAuthenticationResultDetail\#executeGetHandlingTCxinvoiceQxAuthenticationResultTrigger								
-executeSendEmailOfOvertimeUnsettledDetail\#executeSendEmailOfOvertimeUnsettledTrigger								
-sendFactoringDetailsFinshStatusServiceDetail\#sendFactoringDetailsFinshStatusServiceTrigger								
-synErpFactoringDetailsServiceDetail\#synErpFactoringDetailsServiceTrigger								
-executeCreateLeaseExpirationOwnershipClaimDetail\#executeCreateLeaseExpirationOwnershipClaimTrigger								
-write2CollectionPool4T064ServiceDetail#write2CollectionPool4T064ServiceTrigger								
-synFundsTransferClaimStatusServiceDetail#synFundsTransferClaimStatusServiceTrigger								
-executeBaoLiCreate023ClaimJob#executeBaoLiCreate023ClaimJobTrigger								
-executeSendEarlywarningBaoliClaimJob#executeSendEarlywarningBaoliClaimJobTrigger								
-executeSendgBaoli023claimRemindJob#executeSendgBaoli023claimRemindJobTrigger								
-transYRData2YiliDetail#transYRData2YiliTrigger								
-sendEmailCommonServiceDetail\#sendEmailCommonServiceTrigger								
-sendTRPubliceAppoveDetail\#sendTRPubliceAppoveTrigger								
-sendTRPrivateAppoveDetail\#sendTRPrivateAppoveTrigger								
-refreshItem2IdServiceDetail\#refreshItem2IdServiceTrigger								
-autoDelOvertimeDraftServiceDetail\#autoDelOvertimeDraftServiceTrigger								
-executeAamAutoArchiveCheckPoolJob\#executeAamAutoArchiveCheckPoolTrigger								
-createV2AutoClaimDetail\#createV2AutoClaimTrigger								
-bwAsyncInvoiceLibjobDetail\#bwAsyncInvoiceLibTrigger								
-autoFundReceiptQueryQarzJobDetail\#autoFundReceiptQueryQarzJobTrigger								
-autoFundReceiptDownQarzJobDetail\#autoFundReceiptDownQarzJobTrigger								
-autoFundSycCmBcRecseqQarzJobDetail\#autoFundSycCmBcRecseqQarzJobTrigger								
-t044AndT051AutoSendProcessServiceJob\#t044AndT051AutoSendProcessServiceJobTrigger								
-importLedgerCert4BankReceivedDetail\#importLedgerCert4BankReceivedTrigger								
-getErpSecurityVerificationRulesJob\#getErpSecurityVerificationRulesJobTrigger								
-getErpSecurityVerificationAssignRespJob\#getErpSecurityVerificationAssignRespJobTrigger								
-reDistinguishRequestJob\#reDistinguishRequestTrigger								
-autoProcessT019ActivityServiceJob\#autoProcessT019ActivityServiceTrigger								
-travelPlatformDailyVehicleClaimTimeOutSendEmailJob\#travelPlatformDailyVehicleClaimTimeOutSendEmailJobTrigger								
-travelPlatformDailyVehicleT008CallBackCxstatusJob\#travelPlatformDailyVehicleT008CallBackCxstatusJobTrigger								
-autoGenT002ForCarServiceDetail\#autoGenT002ForCarServiceTrigger								
-autoCreateT051Detail\#autoCreateT051Trigger								
-autoProcessT051Detail\#autoProcessT051Trigger								
-syncErpGLRTBDServiceDetail\#syncErpGLRTBDServiceTrigger								
-process071JobDetail\#process071Trigger								
-sendTRHRAppoveDetail\#sendTRHRAppoveTrigger								
-autoImpOcrInvoiceLibServiceDetail\#autoImpOcrInvoiceLibServiceTrigger								
-sendEmail4OdmInfoDetail\#sendEmail4OdmInfoTrigger								
-sendEmail4ClaimNosDetail\#sendEmail4ClaimNosTrigger								
-importApDelayJobDetail\#importApDelayTrigger								
-importGLDelayJobDetail\#importGLDelayTrigger								
-importApPoDelayJobDetail\#importApPoDelayTrigger								
-ImportRaCertificateGlAutoDelayJobDetail\#ImportRaCertificateGlAutoDelayTrigger								
-ImportArAmtRemainGlAutoDelayJobDetail\#ImportArAmtRemainGlAutoDelayTrigger								
-ImportReturnArAmtRemainGlAutoDelayJobDetail\#ImportReturnArAmtRemainGlAutoDelayTrigger								
-ImportArCertificateGlAutoDelayJobDetail\#ImportArCertificateGlAutoDelayTrigger								
-importProcessEndNotErpImportDelayJobDetail\#importProcessEndNotErpImportDelayTrigger								
+ï»¿å®šæ—¶é…ç½®,åŠŸèƒ½,å…¥å£,æ˜¯å¦è‡ªåŠ¨ç”ŸæˆæŠ¥è´¦å•,æ˜¯å¦éœ€è¦ä»˜æ¬¾,ç±»å‹,æ‰§è¡Œé¢‘ç‡,æ‰§è¡Œé¢‘ç‡,
+importTRCertJobDetail\#importTRCertTrigger,ç”µæ±‡ã€ä¸“é¡¹èµ„é‡‘è‡ªåŠ¨å¯¼å…¥ä»˜æ¬¾å‡­è¯,com.ibm.gbs.efinance.business.eip.service.control.ImportTRCertService,å¦,å¦,æŠ¥è´¦åŠŸèƒ½,,,
+sendPaymentListDetail\#sendPaymentListTrigger,ä»˜æ¬¾è®¡åˆ’è‡ªåŠ¨å‘é€è´¢å¸ç³»ç»Ÿ,com.ibm.gbs.efinance.business.eip.service.control.SendPaymentListService,å¦,å¦,æŠ¥è´¦åŠŸèƒ½,,,
+importLedgerCertDetail\#importLedgerCertTrigger,å¾…å¤„ç†å†…ç½‘è‡ªåŠ¨å¯¼å…¥ä»˜æ¬¾å‡­è¯,com.ibm.gbs.efinance.business.eip.service.control.ImportLedgerCertService,å¦,å¦,æŠ¥è´¦åŠŸèƒ½,,,
+sendLedgerServiceDetail\#sendLedgerServiceTrigger,æ‰“å¼€è¡¨è‡ªåŠ¨å‘é€è´¢å¸ç³»ç»Ÿ,com.ibm.gbs.efinance.business.eip.service.control.SendLedgerService,å¦,å¦,æŠ¥è´¦åŠŸèƒ½,,,
+sendImportTRDetail\#sendImportTRTrigger,ä»˜æ¬¾è®¡åˆ’å·²ç¡®è®¤æ•°æ®è‡ªåŠ¨å‘é€åˆ°å¾…å¯¼å…¥,com.ibm.gbs.efinance.business.eip.service.control.SendImportTRService,å¦,å¦,æŠ¥è´¦åŠŸèƒ½,,,
+sendEmailJobDetail\#sendEmailTrigger,ã€å€Ÿæ¬¾å•ã€‘ã€ã€é¢„ä»˜æ¬¾å•ã€‘çš„å‘é€OAé‚®ä»¶ã€å€Ÿæ¬¾é¢„ä»˜é‚®ä»¶æé†’åŠŸèƒ½ã€‘,com.ibm.gbs.efinance.service.mail.service.impl.SendUrgeEmailImpl,å¦,å¦,æŠ¥è´¦åŠŸèƒ½,,,
+cashFlowDetail\#cashFlowTrigger,åŒæ­¥ç°é‡‘æµ,com.ibm.gbs.efinance.ylService.erp.ebs_ap_032_cashflow.service.serviceImpl.CashFlowServiceImpl,å¦,å¦,æ•°æ®åŒæ­¥,,,
+validateCertificateJobDetail\#validateCertificateTrigger,ä»˜æ¬¾å‡­è¯éªŒå¯¼å…¥éªŒè¯æœåŠ¡,com.ibm.gbs.efinance.business.eip.service.validateTimeTaskService.ValidateCertificateInfoSerivce,å¦,å¦,æ¥å£éªŒè¯,,,
+tmisPaymentCustomersDetail\#tmisPaymentCustomersTrigger,æ‰¿å…‘æ±‡ç¥¨å®¢æˆ·ä¿¡æ¯åŒæ­¥,com.ibm.gbs.efinance.ylService.erp.CUX_FSSC_PAYMENT_CUSTOMERS_V.service.serviceImpl.TmisPaymentCustomersServiceImpl,å¦,å¦,æ•°æ®åŒæ­¥,,,
+tmisApProfileOptionsDetail\#tmisApProfileOptionsTrigger,ä¼šè®¡èŒè´£åŒæ­¥,com.ibm.gbs.efinance.ylService.erp.ap_profile_options.service.serviceImpl.TmisApProfileOptionsServiceImpl,å¦,å¦,æ•°æ®åŒæ­¥,,,
+glsegmentCompanyDetail\#glsegmentCompanyTrigger,å…«æ®µ-å…¬å¸æ®µåŒæ­¥,com.ibm.gbs.efinance.ylService.erp.ebs_gl_09_glsegmentCompany.service.serviceImpl.GlsegmentCompanyServiceImpl,å¦,å¦,æ•°æ®åŒæ­¥,,,
+glsegmentCourseDetail\#glsegmentCourseTrigger,å…«æ®µ-ç§‘ç›®æ®µåŒæ­¥,com.ibm.gbs.efinance.ylService.erp.ebs_gl_09_glsegmentCourse.service.serviceImpl.GlsegmentCourseServiceImpl,å¦,å¦,æ•°æ®åŒæ­¥,,,
+glsegmentDepartmentDetail\#glsegmentDepartmentTrigger,å…«æ®µ-éƒ¨é—¨æ®µåŒæ­¥,com.ibm.gbs.efinance.ylService.erp.ebs_gl_09_glsegmentDepartment.service.serviceImpl.GlsegmentDepartmentServiceImpl,å¦,å¦,æ•°æ®åŒæ­¥,,,
+glsegmentEnterpriseDetail\#glsegmentEnterpriseTrigger,å…«æ®µ-äº‹ä¸šéƒ¨æ®µåŒæ­¥,com.ibm.gbs.efinance.ylService.erp.ebs_gl_09_glsegmentEnterprise.service.serviceImpl.GlsegmentEnterpriseServiceImpl,å¦,å¦,æ•°æ®åŒæ­¥,,,
+glsegmentInterCompanyDetail\#glsegmentInterCompanyTrigger,å…«æ®µ-å…¬å¸é—´æ®µåŒæ­¥,com.ibm.gbs.efinance.ylService.erp.ebs_gl_09_glsegmentInterCompany.service.serviceImpl.GlsegmentInterCompanyServiceImpl,å¦,å¦,æ•°æ®åŒæ­¥,,,
+glsegmentProductDetail\#glsegmentProductTrigger,å…«æ®µ-äº§å“æ®µåŒæ­¥,com.ibm.gbs.efinance.ylService.erp.ebs_gl_09_glsegmentProduct.service.serviceImpl.GlsegmentProductServiceImpl,å¦,å¦,æ•°æ®åŒæ­¥,,,
+glsegmentStandbyDetail\#glsegmentStandbyTrigger,å…«æ®µ-å¤‡ç”¨æ®µåŒæ­¥,com.ibm.gbs.efinance.ylService.erp.ebs_gl_09_glsegmentStandby.service.serviceImpl.GlsegmentStandbyServiceImpl,å¦,å¦,æ•°æ®åŒæ­¥,,,
+glsegmentSubgoalDetail\#glsegmentSubgoalTrigger,å…«æ®µ-å­ç›®æ®µåŒæ­¥,com.ibm.gbs.efinance.ylService.erp.ebs_gl_09_glsegmentSubgoal.service.serviceImpl.GlsegmentSubgoalServiceImpl,å¦,å¦,æ•°æ®åŒæ­¥,,,
+glCodeCombinationCwgxDetail\#glCodeCombinationCwgxTrigger,å…«æ®µç»„åˆåŒæ­¥,com.ibm.gbs.efinance.ylService.erp.gl_code_combination_cwgx.service.serviceImpl.GlCodeCombinationCwgxServiceImpl,å¦,å¦,æ•°æ®åŒæ­¥,,,
+tMisAllPeopleDetail\#tMisAllPeopleTrigger,TMisAllPeopleè¡¨æ•°æ®åŒæ­¥,com.ibm.gbs.efinance.ylService.erp.vendor.people.service.serviceImpl.TMisAllPeopleServiceImpl,å¦,å¦,æ•°æ®åŒæ­¥,,,æœªæŸ¥åˆ°è¡¨ä½¿ç”¨çš„åœ°æ–¹
+tMisApSuppliersDetail\#tMisApSuppliersTrigger,ä¾›åº”å•†å¤´ä¿¡æ¯åŒæ­¥,com.ibm.gbs.efinance.ylService.erp.vendor.suppliers.service.serviceImpl.TMisApSuppliersServiceImpl,å¦,å¦,æ•°æ®åŒæ­¥,,,
+tMisApSuppliersSitesDetail\#tMisApSuppliersSitesTrigger,ä¾›åº”å•†åœ°ç‚¹ä¿¡æ¯åŒæ­¥,com.ibm.gbs.efinance.ylService.erp.vendor.supplierssites.service.serviceImpl.TMisApSuppliersSitesServiceImpl,å¦,å¦,æ•°æ®åŒæ­¥,,,
+hrOrgMapErpOrgDetail\#hrOrgMapErpOrgTrigger,HRéƒ¨é—¨ä¸ERPéƒ¨é—¨æ˜ å°„å…³ç³»åŒæ­¥,com.ibm.gbs.efinance.ylService.erp.hrorg_map_erporg.service.serviceImpl.HrOrgMapErpOrgServiceImpl,å¦,å¦,æ•°æ®åŒæ­¥,,,
+organizationHrDetail\#organizationHrTrigger,HRéƒ¨é—¨ä¿¡æ¯åŒæ­¥,com.ibm.gbs.efinance.ylService.hr.ebs_hr_organization.service.serviceImpl.OrganizationHrServiceImpl,å¦,å¦,æ•°æ®åŒæ­¥,,,
+peopleHrDetail\#peopleHrTrigger,HRäººå‘˜ä¿¡æ¯åŒæ­¥,com.ibm.gbs.efinance.ylService.hr.ebs_hr_people.service.serviceImpl.PeopleHrServiceImpl,å¦,å¦,æ•°æ®åŒæ­¥,,,
+positioncollectHrDetail\#positioncollectHrTrigger,THrPositonCollectInfoè¡¨æ•°æ®åŒæ­¥,com.ibm.gbs.efinance.ylService.hr.ebs_hr_positioncollect.service.serviceImpl.PositioncollectHrServiceImpl,å¦,å¦,æ•°æ®åŒæ­¥,,,æ•°æ®è¡¨æ— æ•°æ®
+AccountInfoPortJobDetail\#AccountInfoPortJobTrigger,åŒæ­¥è´¢å¸é“¶è¡Œä¿¡æ¯,com.ibm.gbs.efinance.ylService.fund.accountinfoPort.AccountInfoPortServiceImpl,å¦,å¦,æ•°æ®åŒæ­¥,,,
+BankAccountInformationJobDetail\#BankAccountInformationJobTrigger,åŒæ­¥ERPä»˜æ¬¾é“¶è¡Œä¿¡æ¯,com.ibm.gbs.efinance.business.eip.service.control.BankAccountInformationJob,å¦,å¦,æ•°æ®åŒæ­¥,,,
+CurrencyInfoPortJobDetail\#CurrencyInfoPortJobTrigger,åŒæ­¥è´¢å¸å¸ç§ä¿¡æ¯,com.ibm.gbs.efinance.ylService.fund.currencyInfoPort.CurrencyInfoPortServiceImpl,å¦,å¦,æ•°æ®åŒæ­¥,,,
+OfficeInfoPortJobDetail\#OfficeInfoPortJobTrigger,åŒæ­¥è´¢å¸åŠäº‹å¤„åœ°ç‚¹,com.ibm.gbs.efinance.ylService.fund.officeInfoPort.OfficeInfoPortServiceImpl,å¦,å¦,æ•°æ®åŒæ­¥,,,
+confirmPayListJobDetail\#confirmPayListTrigger,ä»˜æ¬¾è®¡åˆ’ç¡®è®¤è¶…æ—¶å¼ºåˆ¶ç¡®è®¤,com.ibm.gbs.efinance.business.eip.service.control.ConfirmPayListService,å¦,å¦,æŠ¥è´¦åŠŸèƒ½,,,
+ebsClaimjobDetail\#ebsClaimTrigger,æ›´æ–°å‡­è¯æ± Attribute13å­—æ®µä¸ºç©ºçš„æ•°æ®,com.ibm.gbs.efinance.business.eip.service.control.ebsClaimNoJob,å¦,å¦,æŠ¥è´¦åŠŸèƒ½,,,æœ€åæ²¡æœ‰æ‰§è¡Œupdateæ–¹æ³•
+tMisTermsDetail\#tMisTermsTrigger,TMisTermsæ•°æ®è¡¨åŒæ­¥,com.ibm.gbs.efinance.ylService.erp.vendor.terms.service.serviceImpl.TMisTermsServiceImpl,å¦,å¦,æ•°æ®åŒæ­¥,,,æœªæŸ¥åˆ°è¡¨ä½¿ç”¨çš„åœ°æ–¹
+getGlDocSequenceDetail\#getGlDocSequenceTrigger,å‡­è¯å¤´ä¿¡æ¯åŒæ­¥,com.ibm.gbs.efinance.ylService.erp.get_gl_doc_sequence.service.serviceImpl.GetGlDocSequenceServiceImpl,å¦,å¦,æ•°æ®åŒæ­¥,,,
+SendQueueRecordDetail\#sendQueueRecordTrigger,å®šæ—¶ä¿®å¤æŒ‚å½±åƒåˆ†å•ï¼Œå½±åƒåˆ†å•,com.ibm.gbs.efinance.business.eip.service.control.SendQueueRecordJob,å¦,å¦,æŠ¥è´¦åŠŸèƒ½,,,
+soaFsscPdflogServiceDetail\#soaFsscPdflogServiceTrigger,æŸ¥è¯¢EBSå‡­è¯ç”ŸæˆPDFåŠä¼ é€æŠ¥å¸å¹³å°çŠ¶æ€æ¥å£æœåŠ¡,com.ibm.gbs.efinance.ylService.erp.CUX_SOA_FSSC_PDFLOG_V.SoaFsscPdflogJob,å¦,å¦,æ•°æ®åŒæ­¥,,,
+FundOrderQueryJobDetail\#FundOrderQueryJobTrigger,æŸ¥è¯¢è´¢å¸æ”¯ä»˜çŠ¶æ€ï¼ŒæŸ¥è¯¢ä¸“é¡¹é“¶è¡Œæ”¯ä»˜çŠ¶æ€,com.ibm.gbs.efinance.business.eip.service.control.FundOrderQueryJob,å¦,å¦,æ¥å£éªŒè¯,,,
+monitorProcessjobDetail\#monitorProcessTrigger,æ›´æ–°MonitorJobè¡¨æ—¶é—´,com.ibm.gbs.efinance.business.eip.service.control.MonitorProcessJob,å¦,å¦,æŠ¥è´¦åŠŸèƒ½,,,æœªæŸ¥åˆ°è¡¨ä½¿ç”¨çš„åœ°æ–¹
+queryMilkPayAndUpdateDetail\#queryMilkPayAndUpdateTrigger,ERPåŸå¥¶ä»˜æ¬¾è®¡åˆ’è¡ŒåŒæ­¥ä»¥åŠçŠ¶æ€å›å†™,com.ibm.gbs.efinance.ylService.erp.ebs_ap_trmbspaylist.queryMilkPayAndUpdateJob,å¦,å¦,æ•°æ®åŒæ­¥,,,åº”è¯¥å·²ç»ä¸ä½¿ç”¨äº†ï¼Œéœ€è¦ç¡®è®¤
+ClearAccountHandleCountDetail\#ClearAccountHandleCountTrigger,æ¸…é™¤ä¼šè®¡æ¥å•é‡,com.ibm.gbs.efinance.business.eip.service.control.validate.ClearAccountHandleCount,å¦,å¦,æŠ¥è´¦åŠŸèƒ½,,,
+CUX_FSSC_OU_VDetail\#CUX_FSSC_OU_VTrigger,åŒæ­¥å…¨OUä¿¡æ¯,com.ibm.gbs.efinance.ylService.erp.CUX_FSSC_OU_V.CUX_FSSC_OU_VJob,å¦,å¦,æ•°æ®åŒæ­¥,å¤©,æ¯å¤©2ç‚¹22åˆ†æ‰§è¡Œä¸€æ¬¡,
+eimOfZJServicejobDetail\#eimOfZJServiceTrigger,è´¢å¸å›å•æ–‡ä»¶ã€ä¸“é¡¹èµ„é‡‘å›å•æ–‡ä»¶æŒ‚æ¥,com.ibm.gbs.efinance.business.eip.service.control.EimOfZJServiceJob,å¦,å¦,æŠ¥è´¦åŠŸèƒ½,å¤©,æ¯å¤©3ç‚¹26åˆ†æ‰§è¡Œä¸€æ¬¡,
+matchNeedSendEmailJobDetail\#matchNeedSendEmailJobTrigger,æŒ‚æ¥å½±åƒæŠ¥è´¦å•ã€æœªå®Œæˆè¡¥å•æŠ¥è´¦å•ä¿å­˜å¾…æ¨é€é‚®ä»¶ä¿¡æ¯å®šæ—¶ä¿¡æ¯,com.ibm.gbs.efinance.business.eip.service.control.validate.MatchNeedSendEmailJob,å¦,å¦,æŠ¥è´¦åŠŸèƒ½,å¤©,æ¯å¤©8ç‚¹10æ‰§è¡Œä¸€æ¬¡,
+sendEmailNoticeImageJobDetail\#sendEmailNoticeImageJobTrigger,æŒ‚æ¥å½±åƒæŠ¥è´¦å•ã€æœªå®Œæˆè¡¥å•æŠ¥è´¦å•æ¨é€é‚®ä»¶ä¿¡æ¯å®šæ—¶,com.ibm.gbs.efinance.business.eip.service.control.validate.SendEmailNoticeImageJob,å¦,å¦,æŠ¥è´¦åŠŸèƒ½,å¤©,æ¯å¤©9ç‚¹10æ‰§è¡Œä¸€æ¬¡,
+turnBackClaimJobDetail\#turnBackClaimJobTrigger,å½±åƒé•¿æœŸæœªæŒ‚æ¥ï¼Œç³»ç»Ÿè‡ªåŠ¨é€€å›ã€‚é€€å›å¤±è´¥é‡ç½®åˆ°è‰ç¨¿,com.ibm.gbs.efinance.business.eip.service.control.TurnBackClaimJob,å¦,å¦,æŠ¥è´¦åŠŸèƒ½,å¤šæ¬¡,æ¯ä¸¤ä¸ªå°æ—¶11åˆ†æ‰§è¡Œä¸€æ¬¡,
+borrowingFinishActivityJobDetail\#borrowingFinishActivityJobTrigger,åˆ é™¤å¤§äº30å¤©å°äº60å¤©èµ„é‡‘å›å•æŒ‚æ¥å¤±è´¥çš„å½±åƒã€‚åˆ é™¤eimImageFileè¡¨æ²¡æœ‰image_idçš„å½±åƒä¿¡æ¯ã€‚è‡ªåŠ¨åˆ›å»ºæŠ¥è¡¨æƒé™ã€‚,com.ibm.gbs.aam.controller.BorrowingFinishActivityJob,å¦,å¦,æŠ¥è´¦åŠŸèƒ½,å¤©,æ¯å¤©23ç‚¹10åˆ†æ‰§è¡Œä¸€æ¬¡,
+borrowingSendEmailJobDetail\#borrowingSendEmailJobTrigger,çº¸è´¨å€Ÿé˜…å»¶æœŸæœªå½’è¿˜å‚¬å‘é‚®ä»¶æœåŠ¡ï¼Œæ›´æ–°ebs_invoice_pay_glè¡¨is_associatedå­—æ®µï¼Œè®¾ç½®é»‘åå•æœåŠ¡,com.ibm.gbs.aam.controller.BorrowingSendEmailJob,å¦,å¦,æŠ¥è´¦åŠŸèƒ½,å¤©,æ¯å¤©0ç‚¹50åˆ†æ‰§è¡Œä¸€æ¬¡,
+pendingServiceJobDetail\#pendingServiceJobTrigger,æŸ¥è¯¢å‘é€OAå¾…åŠå¤±è´¥çš„æŠ¥è´¦å•ã€ä»˜æ¬¾è®¡åˆ’è¡Œç¡®è®¤ä¿¡æ¯é‡æ–°å‘é€å¾…åŠä¿¡æ¯,com.ibm.gbs.efinance.business.eip.service.control.PendingServiceJob,å¦,å¦,æŠ¥è´¦åŠŸèƒ½,å¤šæ¬¡,æ¯20åˆ†é’Ÿæ‰§è¡Œä¸€æ¬¡,
+quyGlVoucherInfoDetail\#quyGlVoucherInfoTrigger,åŒæ­¥å‡­è¯è¡Œä¿¡æ¯,com.ibm.gbs.efinance.ylService.erp.fssc_ebs_gl_quyglvoucherinfo.QuyGlVoucherInfoJob,å¦,å¦,æ•°æ®åŒæ­¥,å¤šæ¬¡,æ¯10åˆ†é’Ÿæ‰§è¡Œä¸€æ¬¡,
+processUtil1JobDetail\#processUtil1JobTrigger,ä¿®å¤æŒ‚æ¥å½±åƒæœªå˜çŠ¶æ€IsHookImage,com.ibm.gbs.efinance.business.eip.service.control.ProcessUtil1Job,å¦,å¦,æŠ¥è´¦åŠŸèƒ½,å¤šæ¬¡,æ¯5åˆ†é’Ÿæ‰§è¡Œä¸€æ¬¡,
+processUtil2JobDetail\#processUtil2JobTrigger,t_process_wi_record_queueæœ‰æ•°æ®ï¼Œä½†æ˜¯t_process_wi_recordæ²¡æœ‰æ•°æ®ï¼Œå¾…åŠä¸ºç”Ÿæˆ,com.ibm.gbs.efinance.business.eip.service.control.ProcessUtil2Job,å¦,å¦,æŠ¥è´¦åŠŸèƒ½,å¤šæ¬¡,æ¯5åˆ†é’Ÿæ‰§è¡Œä¸€æ¬¡,
+processUtil3JobDetail\#processUtil3JobTrigger,æµç¨‹è¡¨æ•°æ®ä¸ä¸»è¡¨ç¯èŠ‚æ•°æ®ä¸å¯¹åº”ï¼Œå®šæ—¶ä¿®å¤,com.ibm.gbs.efinance.business.eip.service.control.ProcessUtil3Job,å¦,å¦,æŠ¥è´¦åŠŸèƒ½,å¤šæ¬¡,æ¯5åˆ†é’Ÿæ‰§è¡Œä¸€æ¬¡,
+processUtilJobDetail\#processUtilJobTrigger,æ ¹æ®å‡­è¯å¤´è¡¨ä¸è¡Œè¡¨ç”Ÿæˆpdfï¼ŒæŒ‚æ¥åˆ°æŠ¥è´¦å•é™„ä»¶åˆ—è¡¨,com.ibm.gbs.efinance.business.eip.service.control.ProcessUtilJob,å¦,å¦,æŠ¥è´¦åŠŸèƒ½,å¤šæ¬¡,æ¯10åˆ†é’Ÿæ‰§è¡Œä¸€æ¬¡,
+budanTurnBackJobDetail\#budanTurnBackJobTrigger,è¡¥å•è¶…æœŸæœªå¤„ç†ï¼Œç³»ç»Ÿè‡ªåŠ¨é€€å›ï¼Œåˆ é™¤è¡¥å•æµç¨‹,com.ibm.gbs.efinance.business.eip.service.control.BudanTurnBackJob,å¦,å¦,æŠ¥è´¦åŠŸèƒ½,å¤šæ¬¡,æ¯20åˆ†é’Ÿæ‰§è¡Œä¸€æ¬¡,
+tpmClaimInfoJobDetail\#tpmClaimInfoJobTrigger,å‘TPMç³»ç»Ÿä¼ é€’æŠ¥è´¦å•ä¿¡æ¯,com.ibm.gbs.efinance.business.eip.service.control.TpmClaimInfoJob,å¦,å¦,æ•°æ®åŒæ­¥,å¤šæ¬¡,æ¯5åˆ†é’Ÿæ‰§è¡Œä¸€æ¬¡,
+changeArchiveIsGuiDangJobDetail\#changeArchiveIsGuiDangJobTrigger,ä¿®æ”¹å·²å½’æ¡£ä½†å‡­è¯æ± æœªæ”¹çŠ¶æ€,com.ibm.gbs.aam.controller.ChangeArchiveIsGuiDangJob,å¦,å¦,æ•°æ®åŒæ­¥,å¤©,æ¯å¤©23ç‚¹20åˆ†æ‰§è¡Œä¸€æ¬¡,
+importApInvoiceJobDetail\#importApInvoiceTrigger,é‡‘å¾·ç‘T026ï¼ŒT027ï¼ŒT036æŠ¥è´¦å•å¯¼å…¥,com.ibm.gbs.efinance.business.eip.service.control.ImportApInVoiceJob,å¦,å¦,æŠ¥è´¦åŠŸèƒ½,å¤šæ¬¡,æ¯5åˆ†é’Ÿæ‰§è¡Œä¸€æ¬¡,
+t036AutoArchiveJobDetail\#t036AutoArchiveJobTrigger,T036ç›®å½•åŒ–æ— ç¥¨æŒ‚è´¦è‡ªåŠ¨å½’æ¡£ï¼Œerpå‡­è¯ç”Ÿæˆè‡ªåŠ¨åŠç»“è™šæ‹ŸæŠ¥è´¦å•-è‡ªåŠ¨å½’æ¡£ï¼ŒæŒ‰è§„åˆ™é…ç½®æŠ¥è´¦å•-è‡ªåŠ¨å½’æ¡£,com.ibm.gbs.aam.controller.T036AutoArchiveJob,å¦,å¦,æŠ¥è´¦åŠŸèƒ½,å¤©,æ¯å¤©23ç‚¹30åˆ†æ‰§è¡Œä¸€æ¬¡,
+importApCertJobDetail\#importApCertTrigger,è™šæ‹Ÿä»˜æ¬¾ï¼Œæ±‡ä¿¡ä»˜æ¬¾ï¼Œé“¶è¡Œæ‰˜æ”¶ï¼Œæ‰¿å…‘æ±‡ç¥¨ç”Ÿæˆä»˜æ¬¾å‡­è¯,com.ibm.gbs.efinance.business.eip.service.control.ImportApCertJob,å¦,å¦,æŠ¥è´¦åŠŸèƒ½,å¤šæ¬¡,æ¯2åˆ†é’Ÿæ‰§è¡Œä¸€æ¬¡,
+importApCertMergeJobDetail\#importApCertMergeTrigger,åˆå¹¶ä»˜æ¬¾å‡­è¯å¯¼å…¥,com.ibm.gbs.efinance.business.eip.service.control.ImportApCertMergeJob,å¦,å¦,æŠ¥è´¦åŠŸèƒ½,å¤šæ¬¡,æ¯2åˆ†é’Ÿæ‰§è¡Œä¸€æ¬¡,
+segment1SrvJobDetail\#segment1SrvJobTrigger,åŒæ­¥èµ„äº§ä¸€çº§äºŒçº§ä¸‰çº§åœ°ç‚¹å®šæ—¶,com.ibm.gbs.efinance.ylService.erp.ebs_esb_quy_fa_loc.job.Segment1SrvJob,å¦,å¦,æ•°æ®åŒæ­¥,å¤©,æ¯å¤©2ç‚¹01åˆ†æ‰§è¡Œä¸€æ¬¡,
+valiCancelGlJobDetail\#valiCancelGlTrigger,éªŒè¯å†²é”€æ€»è´¦å‡­è¯ç»“æœæŸ¥è¯¢,com.ibm.gbs.efinance.business.eip.service.control.ValiCancelGlJob,å¦,å¦,æ¥å£éªŒè¯,å¤šæ¬¡,æ¯ä¸¤ä¸ªå°æ—¶35åˆ†æ‰§è¡Œä¸€æ¬¡,
+createClaimAutoArchiveJobDetail\#createClaimAutoArchiveJobTrigger,æ ¹æ®å‡­è¯å¤´è¡¨è‡ªåŠ¨ç”Ÿæˆè™šæ‹ŸæŠ¥è´¦å•,com.ibm.gbs.aam.controller.CreateClaimAutoArchiveJob,å¦,å¦,æŠ¥è´¦åŠŸèƒ½,å¤©,æ¯å¤©22ç‚¹30åˆ†æ‰§è¡Œä¸€æ¬¡,
+updateVolumeJobDetail\#updateVolumeJobTrigger,æ›´æ–°å¯„äº¤æ¸…å•æ˜ç»†ä¸­å†Œå·æœåŠ¡,com.ibm.gbs.aam.controller.UpdateVolumeJob,å¦,å¦,æŠ¥è´¦åŠŸèƒ½,å¤©,æ¯å¤©15ç‚¹07åˆ†æ‰§è¡Œä¸€æ¬¡,
+ccSendEmailJobDetail\#ccSendEmailJobTrigger,è§£ç­”å®Œæˆçš„å·¥å•è®°å½•å‘é€é‚®ä»¶å®šæ—¶ä»»åŠ¡ï¼Œå·²è®°å½•çš„å‘é€é‚®ä»¶,com.ibm.gbs.efinance.business.eip.service.control.CcSendEmailJob,å¦,å¦,æŠ¥è´¦åŠŸèƒ½,å¤šæ¬¡,æ¯10åˆ†é’Ÿæ‰§è¡Œä¸€æ¬¡,
+tVoucherSpilitJobDetail\#tVoucherSpilitJobTrigger,å‡­è¯æ–­å·æŸ¥è¯¢,com.ibm.gbs.efinance.business.eip.service.control.TVoucherSpilitJob,å¦,å¦,æŠ¥è´¦åŠŸèƒ½,å¤©,æ¯å¤©0ç‚¹30åˆ†æ‰§è¡Œä¸€æ¬¡,
+tVoucherSpilit1JobDetail\#tVoucherSpilit1JobTrigger,å‡­è¯æ–­å·è°ƒç”¨æ¥å£åŒæ­¥å‡­è¯å¤´æ•°æ®,com.ibm.gbs.efinance.business.eip.service.control.TVoucherSpilit1Job,å¦,å¦,æ•°æ®åŒæ­¥,å¤©,æ¯å¤©0ç‚¹50åˆ†æ‰§è¡Œä¸€æ¬¡,
+tVoucherSpilit2JobDetail\#tVoucherSpilit2JobTrigger,å‡­è¯æ–­å·è°ƒç”¨æ¥å£åŒæ­¥å‡­è¯è¡Œæ•°æ®,com.ibm.gbs.efinance.business.eip.service.control.TVoucherSpilit2Job,å¦,å¦,æ•°æ®åŒæ­¥,å¤šæ¬¡,æ¯å¤©1ã€2ã€3ã€4ã€5ç‚¹30åˆ†åŒæ­¥æ•°æ®,
+updateNameForImageJobDetail\#updateNameForImageJobTrigger,æ›´æ–°å½±åƒä»»åŠ¡æ± ç¯èŠ‚åç§°å®šæ—¶,com.ibm.gbs.efinance.business.eip.service.control.updateNameForImageJob,å¦,å¦,æŠ¥è´¦åŠŸèƒ½,å¤šæ¬¡,æ¯5åˆ†æ‰§è¡Œä¸€æ¬¡å•Š,
+startConfirmPayListJobDetail\#startConfirmPayListTrigger,ä»˜æ¬¾è®¡åˆ’è‡ªåŠ¨æ¨é€ç¡®è®¤,,,,,,,
+valiInvoiceLibraryjobDetail\#valiInvoiceLibraryTrigger,,,,,,,,
+ocrUploadjobDetail\#ocrUploadTrigger,,,,,,,,
+ocrClaimValidatejobDetail\#ocrClaimValidateTrigger,,,,,,,,
+quyInvItemInfoDetail\#quyInvItemInfoTrigger,,,,,,,,
+quyArReMethodDetail\#quyArReMethodTrigger,,,,,,,,
+quyArBatchSourceDetail\#quyArBatchSourceTrigger,,,,,,,,
+quyArCustSiteInfoDetail\#quyArCustSiteInfoTrigger,,,,,,,,
+quyArReMethodDetail\#quyArReMethodTrigger,,,,,,,,
+arQuyreceiptRemarkDetail\#arQuyreceiptRemarkTrigger,,,,,,,,
+arQuyreceiptActivityDetail\#arQuyreceiptActivityTrigger,,,,,,,,
+quyArAmtRemainDetail\#quyArAmtRemainTrigger,,,,,,,,
+updateFlowExpireDetail\#updateFlowExpireTrigger,,,,,,,,
+syncAccountTransFlowDetail\#syncAccountTransFlowTrigger,,,,,,,,
+importT008AndT015InvoiceDetail\#importT008AndT015InvoiceTrigger,,,,,,,,
+quyInvUomCodeDetail\#quyInvUomCodeTrigger,,,,,,,,
+quyRaCustTrxTypeDetail\#quyRaCustTrxTypeTrigger,,,,,,,,
+quyInvItemInfoDetail\#quyInvItemInfoTrigger,,,,,,,,
+claimGenerateRulesServiceDetail\#claimGenerateRulesServiceTrigger,,,,,,,,
+claimNotEndJobDetail\#claimNotEndTrigger,,,,,,,,
+createT014ClaimJobDetail\#createT014ClaimJobTrigger,,,,,,,,
+getNeedAlertJobDetail\#getNeedAlertJobTrigger,,,,,,,,
+CDHPSendEmailJobDetail\#CDHPSendEmailJobTrigger,,,,,,,,
+updateFlowExpireDetail\#updateFlowExpireTrigger,,,,,,,,
+claimNotEndJobDetail\#claimNotEndTrigger,,,,,,,,
+voucherReportManagerDetail\#voucherReportManagerTrigger,,,,,,,,
+compareFlowDataDetail\#compareFlowDataTrigger,,,,,,,,
+quyArAmtMarginDetail\#quyArAmtMarginTrigger,,,,,,,,
+saveOcrProcessStatusDetail\#saveOcrProcessStatusTrigger,,,,,,,,
+verificationSendbackClaimDetail\#verificationSendbackClaimTrigger,,,,,,,,
+ocrUploadCommonjobDetail\#ocrUploadCommonTrigger,,,,,,,,
+ocrVerificationCommonjobDetail\#ocrVerificationCommonTrigger,,,,,,,,
+ocrUploadSwitchOffjobDetail\#ocrUploadSwitchOffTrigger,,,,,,,,
+ocrVerificationSwitchOffjobDetail\#ocrVerificationSwitchOffTrigger,,,,,,,,
+importT050JobDetail\#importT050Trigger,,,,,,,,
+importT001ToPublicJobDetail\#importT001ToPublicTrigger,,,,,,,,
+clearT034MilkDataPoolJobDetail\#clearT034MilkDataPoolTrigger,,,,,,,,
+travelEmployeeTurnoverDraftDetail\#travelEmployeeTurnoverDraftTrigger,,,,,,,,
+hrdepRoleUpdateDetail\#hrdepRoleUpdateTrigger,,,,,,,,
+travelDeleteDraftDetail\#travelDeleteDraftTrigger,,,,,,,,
+autoSignDetail\#autoSignTrigger,,,,,,,,
+importLedgerPaymentJobDetail\#importLedgerPaymentTrigger,,,,,,,,
+searchExportDetail\#searchExportTrigger,,,,,,,,
+autoProcessT020ServiceDetail\#autoProcessT020ServiceTrigger,,,,,,,,
+importLedgerTRPaymentJobDetail\#importLedgerTRPaymentTrigger,,,,,,,,
+fundAllocationSignJobDetail\#fundAllocationSignTrigger,,,,,,,,
+paylistUpdateDetail\#paylistUpdateTrigger,,,,,,,,
+assetCostDetail\#assetCostTrigger,,,,,,,,
+assetDistributDetail\#assetDistributTrigger,,,,,,,,
+assetDeprnDetail\#assetDeprnTrigger,,,,,,,,
+assetPhysicalDetail\#assetPhysicalTrigger,,,,,,,,
+overdueTurnBackClaimJobDetail\#overdueTurnBackClaimJobTrigger,,,,,,,,
+syncAcptBillDetail3\#SyncAcptBillTrigger3,,,,,,,,
+syncAcptBillDetail\#SyncAcptBillTrigger1,,,,,,,,
+syncAcptBillDetail2\#SyncAcptBillTrigger2,,,,,,,,
+syncAcptBillDetail4\#SyncAcptBillTrigger4,,,,,,,,
+syncAcptBillDetail5\#SyncAcptBillTrigger5,,,,,,,,
+t057PaylistConfirmDetail\#t057PaylistConfirmTrigger,,,,,,,,
+currencyExchangerateDetail\#currencyExchangerateTrigger,,,,,,,,
+importFoerignCurrencyPaymentJobDetail\#importFoerignCurrencyPaymentTrigger,,,,,,,,
+claimTravelFeePushOADetail\#claimTravelFeePushOATrigger,,,,,,,,
+paymentFailUpdateVendorDetail\#paymentFailUpdateVendorTrigger,,,,,,,,
+paymentFailSendMailDetail\#paymentFailSendMailTrigger,,,,,,,,
+payFailAutoCreateClaimDetail\#payFailAutoCreateClaimTrigger,,,,,,,,
+abmAutoSignForJob\#abmAutoSignForJobTrigger,,,,,,,,
+abmAutoReconciliationJob\#abmAutoReconciliationTrigger,,,,,,,,
+assetCategoriDetail\#assetCategoriTrigger,,,,,,,,
+cleanImportTimeoutJob\#cleanImportTimeoutJobTrigger,,,,,,,,
+automationProcessMonitorJob\#automationProcessMonitorJobTrigger,,,,,,,,
+syncBwInvoiceStatusForHisJobDetail\#syncBwInvoiceStatusForHisTrigger,,,,,,,,
+automationProcessMonitorJob\#automationProcessMonitorJobTrigger,,,,,,,,
+createT033T040ClaimJobDetail\#createT033T040ClaimJobTrigger,,,,,,,,
+autoSign4T015T016Detail\#autoSign4T015T016Trigger,,,,,,,,
+autoSuppleRoleAuthDetail\#autoSuppleRoleAuthTrigger,,,,,,,,
+fsscGroupinfoSendEhrDetail\#fsscGroupinfoSendEhrTrigger,,,,,,,,
+updateSysTaskDetail\#updateSysTaskTrigger,,,,,,,,
+syncTRAccountBalanceDetail\#syncTRAccountBalanceTrigger,,,,,,,,
+changeUserStatus4EndValidDateDetail\#changeUserStatus4EndValidDateTrigger,,,,,,,,
+autoGenTaxTabDetail\#autoGenTaxTabTrigger,,,,,,,,
+resetClaimGenTaxStatusDetail\#resetClaimGenTaxStatusTrigger,,,,,,,,
+autoProcessT001ServiceDetail\#autoProcessT001ServiceTrigger,,,,,,,,
+autoProcessT001TaxImageServiceDetail\#autoProcessT001TaxImageServiceTrigger,,,,,,,,
+sendEmail4ClaimNosDetail\#sendEmail4ClaimNosTrigger,,,,,,,,
+syncBwInvoiceStatusForHisJobDetail\#syncBwInvoiceStatusForHisTrigger,,,,,,,,
+allInvoiceAuthenticationDetail\#allInvoiceAuthenticationTrigger,,,,,,,,
+allInvoiceAuthenticationResultDetail\#allInvoiceAuthenticationResultTrigger,,,,,,,,
+cancelInvoiceAuthenticationResultDetail\#cancelInvoiceAuthenticationResultTrigger,,,,,,,,
+executeInsertDaidi2JinXClaimsJobDetail\#executeInsertDaidi2JinXClaimsJobTrigger,,,,,,,,
+itsmQaJob\#itsmQaJobTrigger,,,,,,,,
+fullProcessMonitoringOfFundsMongoJob\#fullProcessMonitoringOfFundsMongoJobTrigger,,,,,,,,
+autoGenOcrRecogReportServiceDetail\#autoGenOcrRecogReportServiceTrigger,,,,,,,,
+claimProjectFeePushOADetail\#claimProjectFeePushOATrigger,,,,,,,,
+fssc2TaxClaimDataServiceDetail\#fssc2TaxClaimDataServiceTrigger,,,,,,,,
+fssc2TaxInvoiceDataServiceDetail\#fssc2TaxInvoiceDataServiceTrigger,,,,,,,,
+claimDlerDataPushDetail\#claimDlerDataPushTrigger,,,,,,,,
+updateUserGroupIdErrDetail\#updateUserGroupIdErrTrigger,,,,,,,,
+updateDelayInvoiceImportServiceDetail\#updateDelayInvoiceImportServiceTrigger,,,,,,,,
+leaseContractTerminateJobDetail\#leaseContractTerminateTrigger,,,,,,,,
+createT059InterestClaimJobDetail\#createT059InterestClaimTrigger,,,,,,,,
+insertT059InterestJobDetail\#insertT059InterestTrigger,,,,,,,,
+claimProjectFeeRealPushOADetail\#claimProjectFeeRealPushOATrigger,,,,,,,,
+autoProcessBizAccountActivityServiceJob\#autoProcessBizAccountActivityServiceTrigger,,,,,,,,
+ledgerPayListEmailNotifactionServiceDetail\#ledgerPayListEmailNotifactionServiceTrigger,,,,,,,,
+executeHandleTCxinvoiceQxAuthenticationDetail\#executeHandleTCxinvoiceQxAuthenticationTrigger,,,,,,,,
+executeGetHandlingTCxinvoiceQxAuthenticationResultDetail\#executeGetHandlingTCxinvoiceQxAuthenticationResultTrigger,,,,,,,,
+executeSendEmailOfOvertimeUnsettledDetail\#executeSendEmailOfOvertimeUnsettledTrigger,,,,,,,,
+sendFactoringDetailsFinshStatusServiceDetail\#sendFactoringDetailsFinshStatusServiceTrigger,,,,,,,,
+synErpFactoringDetailsServiceDetail\#synErpFactoringDetailsServiceTrigger,,,,,,,,
+executeCreateLeaseExpirationOwnershipClaimDetail\#executeCreateLeaseExpirationOwnershipClaimTrigger,,,,,,,,
+write2CollectionPool4T064ServiceDetail#write2CollectionPool4T064ServiceTrigger,,,,,,,,
+synFundsTransferClaimStatusServiceDetail#synFundsTransferClaimStatusServiceTrigger,,,,,,,,
+executeBaoLiCreate023ClaimJob#executeBaoLiCreate023ClaimJobTrigger,,,,,,,,
+executeSendEarlywarningBaoliClaimJob#executeSendEarlywarningBaoliClaimJobTrigger,,,,,,,,
+executeSendgBaoli023claimRemindJob#executeSendgBaoli023claimRemindJobTrigger,,,,,,,,
+transYRData2YiliDetail#transYRData2YiliTrigger,,,,,,,,
+sendEmailCommonServiceDetail\#sendEmailCommonServiceTrigger,,,,,,,,
+sendTRPubliceAppoveDetail\#sendTRPubliceAppoveTrigger,,,,,,,,
+sendTRPrivateAppoveDetail\#sendTRPrivateAppoveTrigger,,,,,,,,
+refreshItem2IdServiceDetail\#refreshItem2IdServiceTrigger,,,,,,,,
+autoDelOvertimeDraftServiceDetail\#autoDelOvertimeDraftServiceTrigger,,,,,,,,
+executeAamAutoArchiveCheckPoolJob\#executeAamAutoArchiveCheckPoolTrigger,,,,,,,,
+createV2AutoClaimDetail\#createV2AutoClaimTrigger,,,,,,,,
+bwAsyncInvoiceLibjobDetail\#bwAsyncInvoiceLibTrigger,,,,,,,,
+autoFundReceiptQueryQarzJobDetail\#autoFundReceiptQueryQarzJobTrigger,,,,,,,,
+autoFundReceiptDownQarzJobDetail\#autoFundReceiptDownQarzJobTrigger,,,,,,,,
+autoFundSycCmBcRecseqQarzJobDetail\#autoFundSycCmBcRecseqQarzJobTrigger,,,,,,,,
+t044AndT051AutoSendProcessServiceJob\#t044AndT051AutoSendProcessServiceJobTrigger,,,,,,,,
+importLedgerCert4BankReceivedDetail\#importLedgerCert4BankReceivedTrigger,,,,,,,,
+getErpSecurityVerificationRulesJob\#getErpSecurityVerificationRulesJobTrigger,,,,,,,,
+getErpSecurityVerificationAssignRespJob\#getErpSecurityVerificationAssignRespJobTrigger,,,,,,,,
+reDistinguishRequestJob\#reDistinguishRequestTrigger,,,,,,,,
+autoProcessT019ActivityServiceJob\#autoProcessT019ActivityServiceTrigger,,,,,,,,
+travelPlatformDailyVehicleClaimTimeOutSendEmailJob\#travelPlatformDailyVehicleClaimTimeOutSendEmailJobTrigger,,,,,,,,
+travelPlatformDailyVehicleT008CallBackCxstatusJob\#travelPlatformDailyVehicleT008CallBackCxstatusJobTrigger,,,,,,,,
+autoGenT002ForCarServiceDetail\#autoGenT002ForCarServiceTrigger,,,,,,,,
+autoCreateT051Detail\#autoCreateT051Trigger,,,,,,,,
+autoProcessT051Detail\#autoProcessT051Trigger,,,,,,,,
+syncErpGLRTBDServiceDetail\#syncErpGLRTBDServiceTrigger,,,,,,,,
+process071JobDetail\#process071Trigger,,,,,,,,
+sendTRHRAppoveDetail\#sendTRHRAppoveTrigger,,,,,,,,
+autoImpOcrInvoiceLibServiceDetail\#autoImpOcrInvoiceLibServiceTrigger,,,,,,,,
+sendEmail4OdmInfoDetail\#sendEmail4OdmInfoTrigger,,,,,,,,
+sendEmail4ClaimNosDetail\#sendEmail4ClaimNosTrigger,,,,,,,,
+importApDelayJobDetail\#importApDelayTrigger,,,,,,,,
+importGLDelayJobDetail\#importGLDelayTrigger,,,,,,,,
+importApPoDelayJobDetail\#importApPoDelayTrigger,,,,,,,,
+ImportRaCertificateGlAutoDelayJobDetail\#ImportRaCertificateGlAutoDelayTrigger,,,,,,,,
+ImportArAmtRemainGlAutoDelayJobDetail\#ImportArAmtRemainGlAutoDelayTrigger,,,,,,,,
+ImportReturnArAmtRemainGlAutoDelayJobDetail\#ImportReturnArAmtRemainGlAutoDelayTrigger,,,,,,,,
+ImportArCertificateGlAutoDelayJobDetail\#ImportArCertificateGlAutoDelayTrigger,,,,,,,,
+importProcessEndNotErpImportDelayJobDetail\#importProcessEndNotErpImportDelayTrigger,,,,,,,,
