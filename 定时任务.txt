@@ -1,0 +1,221 @@
+定时配置	功能	入口	是否自动生成报账单	是否需要付款	类型	执行频率	执行频率	
+importTRCertJobDetail\#importTRCertTrigger	电汇、专项资金自动导入付款凭证	com.ibm.gbs.efinance.business.eip.service.control.ImportTRCertService	否	否	报账功能			
+sendPaymentListDetail\#sendPaymentListTrigger	付款计划自动发送财司系统	com.ibm.gbs.efinance.business.eip.service.control.SendPaymentListService	否	否	报账功能			
+importLedgerCertDetail\#importLedgerCertTrigger	待处理内网自动导入付款凭证	com.ibm.gbs.efinance.business.eip.service.control.ImportLedgerCertService	否	否	报账功能			
+sendLedgerServiceDetail\#sendLedgerServiceTrigger	打开表自动发送财司系统	com.ibm.gbs.efinance.business.eip.service.control.SendLedgerService	否	否	报账功能			
+sendImportTRDetail\#sendImportTRTrigger	付款计划已确认数据自动发送到待导入	com.ibm.gbs.efinance.business.eip.service.control.SendImportTRService	否	否	报账功能			
+sendEmailJobDetail\#sendEmailTrigger	【借款单】、【预付款单】的发送OA邮件【借款预付邮件提醒功能】	com.ibm.gbs.efinance.service.mail.service.impl.SendUrgeEmailImpl	否	否	报账功能			
+cashFlowDetail\#cashFlowTrigger	同步现金流	com.ibm.gbs.efinance.ylService.erp.ebs_ap_032_cashflow.service.serviceImpl.CashFlowServiceImpl	否	否	数据同步			
+validateCertificateJobDetail\#validateCertificateTrigger	付款凭证验导入验证服务	com.ibm.gbs.efinance.business.eip.service.validateTimeTaskService.ValidateCertificateInfoSerivce	否	否	接口验证			
+tmisPaymentCustomersDetail\#tmisPaymentCustomersTrigger	承兑汇票客户信息同步	com.ibm.gbs.efinance.ylService.erp.CUX_FSSC_PAYMENT_CUSTOMERS_V.service.serviceImpl.TmisPaymentCustomersServiceImpl	否	否	数据同步			
+tmisApProfileOptionsDetail\#tmisApProfileOptionsTrigger	会计职责同步	com.ibm.gbs.efinance.ylService.erp.ap_profile_options.service.serviceImpl.TmisApProfileOptionsServiceImpl	否	否	数据同步			
+glsegmentCompanyDetail\#glsegmentCompanyTrigger	八段-公司段同步	com.ibm.gbs.efinance.ylService.erp.ebs_gl_09_glsegmentCompany.service.serviceImpl.GlsegmentCompanyServiceImpl	否	否	数据同步			
+glsegmentCourseDetail\#glsegmentCourseTrigger	八段-科目段同步	com.ibm.gbs.efinance.ylService.erp.ebs_gl_09_glsegmentCourse.service.serviceImpl.GlsegmentCourseServiceImpl	否	否	数据同步			
+glsegmentDepartmentDetail\#glsegmentDepartmentTrigger	八段-部门段同步	com.ibm.gbs.efinance.ylService.erp.ebs_gl_09_glsegmentDepartment.service.serviceImpl.GlsegmentDepartmentServiceImpl	否	否	数据同步			
+glsegmentEnterpriseDetail\#glsegmentEnterpriseTrigger	八段-事业部段同步	com.ibm.gbs.efinance.ylService.erp.ebs_gl_09_glsegmentEnterprise.service.serviceImpl.GlsegmentEnterpriseServiceImpl	否	否	数据同步			
+glsegmentInterCompanyDetail\#glsegmentInterCompanyTrigger	八段-公司间段同步	com.ibm.gbs.efinance.ylService.erp.ebs_gl_09_glsegmentInterCompany.service.serviceImpl.GlsegmentInterCompanyServiceImpl	否	否	数据同步			
+glsegmentProductDetail\#glsegmentProductTrigger	八段-产品段同步	com.ibm.gbs.efinance.ylService.erp.ebs_gl_09_glsegmentProduct.service.serviceImpl.GlsegmentProductServiceImpl	否	否	数据同步			
+glsegmentStandbyDetail\#glsegmentStandbyTrigger	八段-备用段同步	com.ibm.gbs.efinance.ylService.erp.ebs_gl_09_glsegmentStandby.service.serviceImpl.GlsegmentStandbyServiceImpl	否	否	数据同步			
+glsegmentSubgoalDetail\#glsegmentSubgoalTrigger	八段-子目段同步	com.ibm.gbs.efinance.ylService.erp.ebs_gl_09_glsegmentSubgoal.service.serviceImpl.GlsegmentSubgoalServiceImpl	否	否	数据同步			
+glCodeCombinationCwgxDetail\#glCodeCombinationCwgxTrigger	八段组合同步	com.ibm.gbs.efinance.ylService.erp.gl_code_combination_cwgx.service.serviceImpl.GlCodeCombinationCwgxServiceImpl	否	否	数据同步			
+tMisAllPeopleDetail\#tMisAllPeopleTrigger	TMisAllPeople表数据同步	com.ibm.gbs.efinance.ylService.erp.vendor.people.service.serviceImpl.TMisAllPeopleServiceImpl	否	否	数据同步			未查到表使用的地方
+tMisApSuppliersDetail\#tMisApSuppliersTrigger	供应商头信息同步	com.ibm.gbs.efinance.ylService.erp.vendor.suppliers.service.serviceImpl.TMisApSuppliersServiceImpl	否	否	数据同步			
+tMisApSuppliersSitesDetail\#tMisApSuppliersSitesTrigger	供应商地点信息同步	com.ibm.gbs.efinance.ylService.erp.vendor.supplierssites.service.serviceImpl.TMisApSuppliersSitesServiceImpl	否	否	数据同步			
+hrOrgMapErpOrgDetail\#hrOrgMapErpOrgTrigger	HR部门与ERP部门映射关系同步	com.ibm.gbs.efinance.ylService.erp.hrorg_map_erporg.service.serviceImpl.HrOrgMapErpOrgServiceImpl	否	否	数据同步			
+organizationHrDetail\#organizationHrTrigger	HR部门信息同步	com.ibm.gbs.efinance.ylService.hr.ebs_hr_organization.service.serviceImpl.OrganizationHrServiceImpl	否	否	数据同步			
+peopleHrDetail\#peopleHrTrigger	HR人员信息同步	com.ibm.gbs.efinance.ylService.hr.ebs_hr_people.service.serviceImpl.PeopleHrServiceImpl	否	否	数据同步			
+positioncollectHrDetail\#positioncollectHrTrigger	THrPositonCollectInfo表数据同步	com.ibm.gbs.efinance.ylService.hr.ebs_hr_positioncollect.service.serviceImpl.PositioncollectHrServiceImpl	否	否	数据同步			数据表无数据
+AccountInfoPortJobDetail\#AccountInfoPortJobTrigger	同步财司银行信息	com.ibm.gbs.efinance.ylService.fund.accountinfoPort.AccountInfoPortServiceImpl	否	否	数据同步			
+BankAccountInformationJobDetail\#BankAccountInformationJobTrigger	同步ERP付款银行信息	com.ibm.gbs.efinance.business.eip.service.control.BankAccountInformationJob	否	否	数据同步			
+CurrencyInfoPortJobDetail\#CurrencyInfoPortJobTrigger	同步财司币种信息	com.ibm.gbs.efinance.ylService.fund.currencyInfoPort.CurrencyInfoPortServiceImpl	否	否	数据同步			
+OfficeInfoPortJobDetail\#OfficeInfoPortJobTrigger	同步财司办事处地点	com.ibm.gbs.efinance.ylService.fund.officeInfoPort.OfficeInfoPortServiceImpl	否	否	数据同步			
+confirmPayListJobDetail\#confirmPayListTrigger	付款计划确认超时强制确认	com.ibm.gbs.efinance.business.eip.service.control.ConfirmPayListService	否	否	报账功能			
+ebsClaimjobDetail\#ebsClaimTrigger	更新凭证池Attribute13字段为空的数据	com.ibm.gbs.efinance.business.eip.service.control.ebsClaimNoJob	否	否	报账功能			最后没有执行update方法
+tMisTermsDetail\#tMisTermsTrigger	TMisTerms数据表同步	com.ibm.gbs.efinance.ylService.erp.vendor.terms.service.serviceImpl.TMisTermsServiceImpl	否	否	数据同步			未查到表使用的地方
+getGlDocSequenceDetail\#getGlDocSequenceTrigger	凭证头信息同步	com.ibm.gbs.efinance.ylService.erp.get_gl_doc_sequence.service.serviceImpl.GetGlDocSequenceServiceImpl	否	否	数据同步			
+SendQueueRecordDetail\#sendQueueRecordTrigger	定时修复挂影像分单，影像分单	com.ibm.gbs.efinance.business.eip.service.control.SendQueueRecordJob	否	否	报账功能			
+soaFsscPdflogServiceDetail\#soaFsscPdflogServiceTrigger	查询EBS凭证生成PDF及传送报帐平台状态接口服务	com.ibm.gbs.efinance.ylService.erp.CUX_SOA_FSSC_PDFLOG_V.SoaFsscPdflogJob	否	否	数据同步			
+FundOrderQueryJobDetail\#FundOrderQueryJobTrigger	查询财司支付状态，查询专项银行支付状态	com.ibm.gbs.efinance.business.eip.service.control.FundOrderQueryJob	否	否	接口验证			
+monitorProcessjobDetail\#monitorProcessTrigger	更新MonitorJob表时间	com.ibm.gbs.efinance.business.eip.service.control.MonitorProcessJob	否	否	报账功能			未查到表使用的地方
+queryMilkPayAndUpdateDetail\#queryMilkPayAndUpdateTrigger	ERP原奶付款计划行同步以及状态回写	com.ibm.gbs.efinance.ylService.erp.ebs_ap_trmbspaylist.queryMilkPayAndUpdateJob	否	否	数据同步			应该已经不使用了，需要确认
+ClearAccountHandleCountDetail\#ClearAccountHandleCountTrigger	清除会计接单量	com.ibm.gbs.efinance.business.eip.service.control.validate.ClearAccountHandleCount	否	否	报账功能			
+CUX_FSSC_OU_VDetail\#CUX_FSSC_OU_VTrigger	同步全OU信息	com.ibm.gbs.efinance.ylService.erp.CUX_FSSC_OU_V.CUX_FSSC_OU_VJob	否	否	数据同步	天	每天2点22分执行一次	
+eimOfZJServicejobDetail\#eimOfZJServiceTrigger	财司回单文件、专项资金回单文件挂接	com.ibm.gbs.efinance.business.eip.service.control.EimOfZJServiceJob	否	否	报账功能	天	每天3点26分执行一次	
+matchNeedSendEmailJobDetail\#matchNeedSendEmailJobTrigger	挂接影像报账单、未完成补单报账单保存待推送邮件信息定时信息	com.ibm.gbs.efinance.business.eip.service.control.validate.MatchNeedSendEmailJob	否	否	报账功能	天	每天8点10执行一次	
+sendEmailNoticeImageJobDetail\#sendEmailNoticeImageJobTrigger	挂接影像报账单、未完成补单报账单推送邮件信息定时	com.ibm.gbs.efinance.business.eip.service.control.validate.SendEmailNoticeImageJob	否	否	报账功能	天	每天9点10执行一次	
+turnBackClaimJobDetail\#turnBackClaimJobTrigger	影像长期未挂接，系统自动退回。退回失败重置到草稿	com.ibm.gbs.efinance.business.eip.service.control.TurnBackClaimJob	否	否	报账功能	多次	每两个小时11分执行一次	
+borrowingFinishActivityJobDetail\#borrowingFinishActivityJobTrigger	删除大于30天小于60天资金回单挂接失败的影像。删除eimImageFile表没有image_id的影像信息。自动创建报表权限。	com.ibm.gbs.aam.controller.BorrowingFinishActivityJob	否	否	报账功能	天	每天23点10分执行一次	
+borrowingSendEmailJobDetail\#borrowingSendEmailJobTrigger	纸质借阅延期未归还催发邮件服务，更新ebs_invoice_pay_gl表is_associated字段，设置黑名单服务	com.ibm.gbs.aam.controller.BorrowingSendEmailJob	否	否	报账功能	天	每天0点50分执行一次	
+pendingServiceJobDetail\#pendingServiceJobTrigger	查询发送OA待办失败的报账单、付款计划行确认信息重新发送待办信息	com.ibm.gbs.efinance.business.eip.service.control.PendingServiceJob	否	否	报账功能	多次	每20分钟执行一次	
+quyGlVoucherInfoDetail\#quyGlVoucherInfoTrigger	同步凭证行信息	com.ibm.gbs.efinance.ylService.erp.fssc_ebs_gl_quyglvoucherinfo.QuyGlVoucherInfoJob	否	否	数据同步	多次	每10分钟执行一次	
+processUtil1JobDetail\#processUtil1JobTrigger	修复挂接影像未变状态IsHookImage	com.ibm.gbs.efinance.business.eip.service.control.ProcessUtil1Job	否	否	报账功能	多次	每5分钟执行一次	
+processUtil2JobDetail\#processUtil2JobTrigger	t_process_wi_record_queue有数据，但是t_process_wi_record没有数据，待办为生成	com.ibm.gbs.efinance.business.eip.service.control.ProcessUtil2Job	否	否	报账功能	多次	每5分钟执行一次	
+processUtil3JobDetail\#processUtil3JobTrigger	流程表数据与主表环节数据不对应，定时修复	com.ibm.gbs.efinance.business.eip.service.control.ProcessUtil3Job	否	否	报账功能	多次	每5分钟执行一次	
+processUtilJobDetail\#processUtilJobTrigger	根据凭证头表与行表生成pdf，挂接到报账单附件列表	com.ibm.gbs.efinance.business.eip.service.control.ProcessUtilJob	否	否	报账功能	多次	每10分钟执行一次	
+budanTurnBackJobDetail\#budanTurnBackJobTrigger	补单超期未处理，系统自动退回，删除补单流程	com.ibm.gbs.efinance.business.eip.service.control.BudanTurnBackJob	否	否	报账功能	多次	每20分钟执行一次	
+tpmClaimInfoJobDetail\#tpmClaimInfoJobTrigger	向TPM系统传递报账单信息	com.ibm.gbs.efinance.business.eip.service.control.TpmClaimInfoJob	否	否	数据同步	多次	每5分钟执行一次	
+changeArchiveIsGuiDangJobDetail\#changeArchiveIsGuiDangJobTrigger	修改已归档但凭证池未改状态	com.ibm.gbs.aam.controller.ChangeArchiveIsGuiDangJob	否	否	数据同步	天	每天23点20分执行一次	
+importApInvoiceJobDetail\#importApInvoiceTrigger	金德瑞T026，T027，T036报账单导入	com.ibm.gbs.efinance.business.eip.service.control.ImportApInVoiceJob	否	否	报账功能	多次	每5分钟执行一次	
+t036AutoArchiveJobDetail\#t036AutoArchiveJobTrigger	T036目录化无票挂账自动归档，erp凭证生成自动办结虚拟报账单-自动归档，按规则配置报账单-自动归档	com.ibm.gbs.aam.controller.T036AutoArchiveJob	否	否	报账功能	天	每天23点30分执行一次	
+importApCertJobDetail\#importApCertTrigger	虚拟付款，汇信付款，银行托收，承兑汇票生成付款凭证	com.ibm.gbs.efinance.business.eip.service.control.ImportApCertJob	否	否	报账功能	多次	每2分钟执行一次	
+importApCertMergeJobDetail\#importApCertMergeTrigger	合并付款凭证导入	com.ibm.gbs.efinance.business.eip.service.control.ImportApCertMergeJob	否	否	报账功能	多次	每2分钟执行一次	
+segment1SrvJobDetail\#segment1SrvJobTrigger	同步资产一级二级三级地点定时	com.ibm.gbs.efinance.ylService.erp.ebs_esb_quy_fa_loc.job.Segment1SrvJob	否	否	数据同步	天	每天2点01分执行一次	
+valiCancelGlJobDetail\#valiCancelGlTrigger	验证冲销总账凭证结果查询	com.ibm.gbs.efinance.business.eip.service.control.ValiCancelGlJob	否	否	接口验证	多次	每两个小时35分执行一次	
+createClaimAutoArchiveJobDetail\#createClaimAutoArchiveJobTrigger	根据凭证头表自动生成虚拟报账单	com.ibm.gbs.aam.controller.CreateClaimAutoArchiveJob	否	否	报账功能	天	每天22点30分执行一次	
+updateVolumeJobDetail\#updateVolumeJobTrigger	更新寄交清单明细中册号服务	com.ibm.gbs.aam.controller.UpdateVolumeJob	否	否	报账功能	天	每天15点07分执行一次	
+ccSendEmailJobDetail\#ccSendEmailJobTrigger	解答完成的工单记录发送邮件定时任务，已记录的发送邮件	com.ibm.gbs.efinance.business.eip.service.control.CcSendEmailJob	否	否	报账功能	多次	每10分钟执行一次	
+tVoucherSpilitJobDetail\#tVoucherSpilitJobTrigger	凭证断号查询	com.ibm.gbs.efinance.business.eip.service.control.TVoucherSpilitJob	否	否	报账功能	天	每天0点30分执行一次	
+tVoucherSpilit1JobDetail\#tVoucherSpilit1JobTrigger	凭证断号调用接口同步凭证头数据	com.ibm.gbs.efinance.business.eip.service.control.TVoucherSpilit1Job	否	否	数据同步	天	每天0点50分执行一次	
+tVoucherSpilit2JobDetail\#tVoucherSpilit2JobTrigger	凭证断号调用接口同步凭证行数据	com.ibm.gbs.efinance.business.eip.service.control.TVoucherSpilit2Job	否	否	数据同步	多次	每天1、2、3、4、5点30分同步数据	
+updateNameForImageJobDetail\#updateNameForImageJobTrigger	更新影像任务池环节名称定时	com.ibm.gbs.efinance.business.eip.service.control.updateNameForImageJob	否	否	报账功能	多次	每5分执行一次啊	
+startConfirmPayListJobDetail\#startConfirmPayListTrigger	付款计划自动推送确认							
+valiInvoiceLibraryjobDetail\#valiInvoiceLibraryTrigger								
+ocrUploadjobDetail\#ocrUploadTrigger								
+ocrClaimValidatejobDetail\#ocrClaimValidateTrigger								
+quyInvItemInfoDetail\#quyInvItemInfoTrigger								
+quyArReMethodDetail\#quyArReMethodTrigger								
+quyArBatchSourceDetail\#quyArBatchSourceTrigger								
+quyArCustSiteInfoDetail\#quyArCustSiteInfoTrigger								
+quyArReMethodDetail\#quyArReMethodTrigger								
+arQuyreceiptRemarkDetail\#arQuyreceiptRemarkTrigger								
+arQuyreceiptActivityDetail\#arQuyreceiptActivityTrigger								
+quyArAmtRemainDetail\#quyArAmtRemainTrigger								
+updateFlowExpireDetail\#updateFlowExpireTrigger								
+syncAccountTransFlowDetail\#syncAccountTransFlowTrigger								
+importT008AndT015InvoiceDetail\#importT008AndT015InvoiceTrigger								
+quyInvUomCodeDetail\#quyInvUomCodeTrigger								
+quyRaCustTrxTypeDetail\#quyRaCustTrxTypeTrigger								
+quyInvItemInfoDetail\#quyInvItemInfoTrigger								
+claimGenerateRulesServiceDetail\#claimGenerateRulesServiceTrigger								
+claimNotEndJobDetail\#claimNotEndTrigger								
+createT014ClaimJobDetail\#createT014ClaimJobTrigger								
+getNeedAlertJobDetail\#getNeedAlertJobTrigger								
+CDHPSendEmailJobDetail\#CDHPSendEmailJobTrigger								
+updateFlowExpireDetail\#updateFlowExpireTrigger								
+claimNotEndJobDetail\#claimNotEndTrigger								
+voucherReportManagerDetail\#voucherReportManagerTrigger								
+compareFlowDataDetail\#compareFlowDataTrigger								
+quyArAmtMarginDetail\#quyArAmtMarginTrigger								
+saveOcrProcessStatusDetail\#saveOcrProcessStatusTrigger								
+verificationSendbackClaimDetail\#verificationSendbackClaimTrigger								
+ocrUploadCommonjobDetail\#ocrUploadCommonTrigger								
+ocrVerificationCommonjobDetail\#ocrVerificationCommonTrigger								
+ocrUploadSwitchOffjobDetail\#ocrUploadSwitchOffTrigger								
+ocrVerificationSwitchOffjobDetail\#ocrVerificationSwitchOffTrigger								
+importT050JobDetail\#importT050Trigger								
+importT001ToPublicJobDetail\#importT001ToPublicTrigger								
+clearT034MilkDataPoolJobDetail\#clearT034MilkDataPoolTrigger								
+travelEmployeeTurnoverDraftDetail\#travelEmployeeTurnoverDraftTrigger								
+hrdepRoleUpdateDetail\#hrdepRoleUpdateTrigger								
+travelDeleteDraftDetail\#travelDeleteDraftTrigger								
+autoSignDetail\#autoSignTrigger								
+importLedgerPaymentJobDetail\#importLedgerPaymentTrigger								
+searchExportDetail\#searchExportTrigger								
+autoProcessT020ServiceDetail\#autoProcessT020ServiceTrigger								
+importLedgerTRPaymentJobDetail\#importLedgerTRPaymentTrigger								
+fundAllocationSignJobDetail\#fundAllocationSignTrigger								
+paylistUpdateDetail\#paylistUpdateTrigger								
+assetCostDetail\#assetCostTrigger								
+assetDistributDetail\#assetDistributTrigger								
+assetDeprnDetail\#assetDeprnTrigger								
+assetPhysicalDetail\#assetPhysicalTrigger								
+overdueTurnBackClaimJobDetail\#overdueTurnBackClaimJobTrigger								
+syncAcptBillDetail3\#SyncAcptBillTrigger3								
+syncAcptBillDetail\#SyncAcptBillTrigger1								
+syncAcptBillDetail2\#SyncAcptBillTrigger2								
+syncAcptBillDetail4\#SyncAcptBillTrigger4								
+syncAcptBillDetail5\#SyncAcptBillTrigger5								
+t057PaylistConfirmDetail\#t057PaylistConfirmTrigger								
+currencyExchangerateDetail\#currencyExchangerateTrigger								
+importFoerignCurrencyPaymentJobDetail\#importFoerignCurrencyPaymentTrigger								
+claimTravelFeePushOADetail\#claimTravelFeePushOATrigger								
+paymentFailUpdateVendorDetail\#paymentFailUpdateVendorTrigger								
+paymentFailSendMailDetail\#paymentFailSendMailTrigger								
+payFailAutoCreateClaimDetail\#payFailAutoCreateClaimTrigger								
+abmAutoSignForJob\#abmAutoSignForJobTrigger								
+abmAutoReconciliationJob\#abmAutoReconciliationTrigger								
+assetCategoriDetail\#assetCategoriTrigger								
+cleanImportTimeoutJob\#cleanImportTimeoutJobTrigger								
+automationProcessMonitorJob\#automationProcessMonitorJobTrigger								
+syncBwInvoiceStatusForHisJobDetail\#syncBwInvoiceStatusForHisTrigger								
+automationProcessMonitorJob\#automationProcessMonitorJobTrigger								
+createT033T040ClaimJobDetail\#createT033T040ClaimJobTrigger								
+autoSign4T015T016Detail\#autoSign4T015T016Trigger								
+autoSuppleRoleAuthDetail\#autoSuppleRoleAuthTrigger								
+fsscGroupinfoSendEhrDetail\#fsscGroupinfoSendEhrTrigger								
+updateSysTaskDetail\#updateSysTaskTrigger								
+syncTRAccountBalanceDetail\#syncTRAccountBalanceTrigger								
+changeUserStatus4EndValidDateDetail\#changeUserStatus4EndValidDateTrigger								
+autoGenTaxTabDetail\#autoGenTaxTabTrigger								
+resetClaimGenTaxStatusDetail\#resetClaimGenTaxStatusTrigger								
+autoProcessT001ServiceDetail\#autoProcessT001ServiceTrigger								
+autoProcessT001TaxImageServiceDetail\#autoProcessT001TaxImageServiceTrigger								
+sendEmail4ClaimNosDetail\#sendEmail4ClaimNosTrigger								
+syncBwInvoiceStatusForHisJobDetail\#syncBwInvoiceStatusForHisTrigger								
+allInvoiceAuthenticationDetail\#allInvoiceAuthenticationTrigger								
+allInvoiceAuthenticationResultDetail\#allInvoiceAuthenticationResultTrigger								
+cancelInvoiceAuthenticationResultDetail\#cancelInvoiceAuthenticationResultTrigger								
+executeInsertDaidi2JinXClaimsJobDetail\#executeInsertDaidi2JinXClaimsJobTrigger								
+itsmQaJob\#itsmQaJobTrigger								
+fullProcessMonitoringOfFundsMongoJob\#fullProcessMonitoringOfFundsMongoJobTrigger								
+autoGenOcrRecogReportServiceDetail\#autoGenOcrRecogReportServiceTrigger								
+claimProjectFeePushOADetail\#claimProjectFeePushOATrigger								
+fssc2TaxClaimDataServiceDetail\#fssc2TaxClaimDataServiceTrigger								
+fssc2TaxInvoiceDataServiceDetail\#fssc2TaxInvoiceDataServiceTrigger								
+claimDlerDataPushDetail\#claimDlerDataPushTrigger								
+updateUserGroupIdErrDetail\#updateUserGroupIdErrTrigger								
+updateDelayInvoiceImportServiceDetail\#updateDelayInvoiceImportServiceTrigger								
+leaseContractTerminateJobDetail\#leaseContractTerminateTrigger								
+createT059InterestClaimJobDetail\#createT059InterestClaimTrigger								
+insertT059InterestJobDetail\#insertT059InterestTrigger								
+claimProjectFeeRealPushOADetail\#claimProjectFeeRealPushOATrigger								
+autoProcessBizAccountActivityServiceJob\#autoProcessBizAccountActivityServiceTrigger								
+ledgerPayListEmailNotifactionServiceDetail\#ledgerPayListEmailNotifactionServiceTrigger								
+executeHandleTCxinvoiceQxAuthenticationDetail\#executeHandleTCxinvoiceQxAuthenticationTrigger								
+executeGetHandlingTCxinvoiceQxAuthenticationResultDetail\#executeGetHandlingTCxinvoiceQxAuthenticationResultTrigger								
+executeSendEmailOfOvertimeUnsettledDetail\#executeSendEmailOfOvertimeUnsettledTrigger								
+sendFactoringDetailsFinshStatusServiceDetail\#sendFactoringDetailsFinshStatusServiceTrigger								
+synErpFactoringDetailsServiceDetail\#synErpFactoringDetailsServiceTrigger								
+executeCreateLeaseExpirationOwnershipClaimDetail\#executeCreateLeaseExpirationOwnershipClaimTrigger								
+write2CollectionPool4T064ServiceDetail#write2CollectionPool4T064ServiceTrigger								
+synFundsTransferClaimStatusServiceDetail#synFundsTransferClaimStatusServiceTrigger								
+executeBaoLiCreate023ClaimJob#executeBaoLiCreate023ClaimJobTrigger								
+executeSendEarlywarningBaoliClaimJob#executeSendEarlywarningBaoliClaimJobTrigger								
+executeSendgBaoli023claimRemindJob#executeSendgBaoli023claimRemindJobTrigger								
+transYRData2YiliDetail#transYRData2YiliTrigger								
+sendEmailCommonServiceDetail\#sendEmailCommonServiceTrigger								
+sendTRPubliceAppoveDetail\#sendTRPubliceAppoveTrigger								
+sendTRPrivateAppoveDetail\#sendTRPrivateAppoveTrigger								
+refreshItem2IdServiceDetail\#refreshItem2IdServiceTrigger								
+autoDelOvertimeDraftServiceDetail\#autoDelOvertimeDraftServiceTrigger								
+executeAamAutoArchiveCheckPoolJob\#executeAamAutoArchiveCheckPoolTrigger								
+createV2AutoClaimDetail\#createV2AutoClaimTrigger								
+bwAsyncInvoiceLibjobDetail\#bwAsyncInvoiceLibTrigger								
+autoFundReceiptQueryQarzJobDetail\#autoFundReceiptQueryQarzJobTrigger								
+autoFundReceiptDownQarzJobDetail\#autoFundReceiptDownQarzJobTrigger								
+autoFundSycCmBcRecseqQarzJobDetail\#autoFundSycCmBcRecseqQarzJobTrigger								
+t044AndT051AutoSendProcessServiceJob\#t044AndT051AutoSendProcessServiceJobTrigger								
+importLedgerCert4BankReceivedDetail\#importLedgerCert4BankReceivedTrigger								
+getErpSecurityVerificationRulesJob\#getErpSecurityVerificationRulesJobTrigger								
+getErpSecurityVerificationAssignRespJob\#getErpSecurityVerificationAssignRespJobTrigger								
+reDistinguishRequestJob\#reDistinguishRequestTrigger								
+autoProcessT019ActivityServiceJob\#autoProcessT019ActivityServiceTrigger								
+travelPlatformDailyVehicleClaimTimeOutSendEmailJob\#travelPlatformDailyVehicleClaimTimeOutSendEmailJobTrigger								
+travelPlatformDailyVehicleT008CallBackCxstatusJob\#travelPlatformDailyVehicleT008CallBackCxstatusJobTrigger								
+autoGenT002ForCarServiceDetail\#autoGenT002ForCarServiceTrigger								
+autoCreateT051Detail\#autoCreateT051Trigger								
+autoProcessT051Detail\#autoProcessT051Trigger								
+syncErpGLRTBDServiceDetail\#syncErpGLRTBDServiceTrigger								
+process071JobDetail\#process071Trigger								
+sendTRHRAppoveDetail\#sendTRHRAppoveTrigger								
+autoImpOcrInvoiceLibServiceDetail\#autoImpOcrInvoiceLibServiceTrigger								
+sendEmail4OdmInfoDetail\#sendEmail4OdmInfoTrigger								
+sendEmail4ClaimNosDetail\#sendEmail4ClaimNosTrigger								
+importApDelayJobDetail\#importApDelayTrigger								
+importGLDelayJobDetail\#importGLDelayTrigger								
+importApPoDelayJobDetail\#importApPoDelayTrigger								
+ImportRaCertificateGlAutoDelayJobDetail\#ImportRaCertificateGlAutoDelayTrigger								
+ImportArAmtRemainGlAutoDelayJobDetail\#ImportArAmtRemainGlAutoDelayTrigger								
+ImportReturnArAmtRemainGlAutoDelayJobDetail\#ImportReturnArAmtRemainGlAutoDelayTrigger								
+ImportArCertificateGlAutoDelayJobDetail\#ImportArCertificateGlAutoDelayTrigger								
+importProcessEndNotErpImportDelayJobDetail\#importProcessEndNotErpImportDelayTrigger								
